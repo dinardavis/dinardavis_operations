@@ -1,14 +1,13 @@
 {
   "files": {
-    "main.css": "/dinardavis_operations/static/css/main.b7ef6da6.css",
-    "main.js": "/dinardavis_operations/static/js/main.54fe69a2.js",
-    "static/media/overhead-laptops-desk.jpg": "/dinardavis_operations/static/media/overhead-laptops-desk.72106d2a5edd2351e75c.jpg",
+    "main.css": "/dinardavis_operations/static/css/main.8fadd7cf.css",
+    "main.js": "/dinardavis_operations/static/js/main.fc90fa9a.js",
     "index.html": "/dinardavis_operations/index.html",
-    "main.b7ef6da6.css.map": "/dinardavis_operations/static/css/main.b7ef6da6.css.map",
-    "main.54fe69a2.js.map": "/dinardavis_operations/static/js/main.54fe69a2.js.map"
+    "main.8fadd7cf.css.map": "/dinardavis_operations/static/css/main.8fadd7cf.css.map",
+    "main.fc90fa9a.js.map": "/dinardavis_operations/static/js/main.fc90fa9a.js.map"
   },
   "entrypoints": [
-    "static/css/main.b7ef6da6.css",
-    "static/js/main.54fe69a2.js"
+    "static/css/main.8fadd7cf.css",
+    "static/js/main.fc90fa9a.js"
   ]
 }
