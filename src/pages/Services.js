@@ -20,13 +20,13 @@ function Services() {
               <h1 className="page-headline">Ways we can<br></br><span>work together</span></h1>
               <div className="intro-content">
                 <p>
-                  Engagements are designed to meet businesses where they are today — from short, focused stabilization work to ongoing support and embedded leadership.
+                  Engagements are designed to meet businesses where they are today, from short, focused stabilization work, to ongoing support and embedded leadership.
                 </p>
               </div>
             </div>
             <div className="intro-image-wrapper">
               <img
-                src="/imgs/work-together-hero.png"
+                src={`${process.env.PUBLIC_URL || ''}/imgs/work-together-hero.png`}
                 alt="Ways we can work together"
                 className="services-intro-image"
               />
@@ -40,7 +40,6 @@ function Services() {
       <section className="services-section">
         <div className="container">
           <div className="feature-cards-grid services-grid">
-            {/* Service 1 */}
             <div className="service-card">
               <h2 className="feature-card-title">30-Day Operational Stabilization</h2>
               <p className="feature-card-price">$3,500<span> one-time</span></p>

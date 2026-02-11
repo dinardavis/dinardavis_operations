@@ -969,7 +969,7 @@ main {
 
 .feature-card-header {
   position: relative;
-  background-image: url('/public/imgs/overhead-laptops-desk.jpg');
+  background-image: var(--feature-card-header-bg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1541,7 +1541,7 @@ main {
   align-items: center;
   z-index: 2;
   text-align: center;
-  padding: var(--spacing-xl) var(--spacing-md);
+  padding: 0 var(--spacing-md);
 }
 
 .footer-cta-headline {
@@ -1665,7 +1665,7 @@ main {
 }
 
 .clients-notice-list li {
-  list-style: none;
+  list-style: disc;
   margin-bottom: 0.5rem;
 }
 
@@ -1880,6 +1880,10 @@ main {
 }
 
 /* How I Work Steps Section */
+.how-i-work-subheadline.section-subheadline{
+  margin: 0 auto;
+}
+
 .how-i-work-steps-section {
   padding: 0 0 var(--spacing-xxl);
   background-color: var(--color-bg-primary);
@@ -2769,6 +2773,29 @@ main {
   opacity: 0.8;
 }
 
+
+/* ============================================
+   MOBILE LAYOUT (max-width: 1000px)
+   Desktop styles unchanged; only applies below 768px.
+   ============================================ */
+@media (max-width: 1000px) {
+
+  .about-intro-wrapper {
+    width: 100%;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+  }
+
+  .intro-content p {
+    max-width: 100%;
+  }
+
+  .about-intro-image-wrapper {
+    max-width: 100%;
+  }
+}
+
+
 /* ============================================
    MOBILE LAYOUT (max-width: 768px)
    Desktop styles unchanged; only applies below 768px.
@@ -2903,7 +2930,7 @@ main {
   }
 
   .hero-headline {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
   }
 
   .hero-headline-1 span {
@@ -3035,6 +3062,29 @@ main {
     overflow: hidden;
   }
 
+  /* About CTA – match combined-cta-section mobile (button size, width, vertical centering) */
+  .about-cta-section {
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-cta-section .container {
+    flex: 1;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-cta-section .services-home-btn {
+    width: auto;
+    max-width: 280px;
+    align-self: center;
+  }
+
   .services .intro-image-wrapper{
     margin-bottom: -2rem;
   }
@@ -3059,26 +3109,53 @@ main {
 
   .why-choose-tile {
     grid-template-columns: 1fr;
-    gap: 12px;
+    grid-template-rows: auto 1fr;
+    gap: 14px;
+    padding: 18px 15px;
+    align-items: start;
   }
 
   .why-choose-tile-number {
     display: block;
     width: 100%;
     font-size: 56px;
+    line-height: 1;
     border-bottom: 1px solid var(--color-text-primary);
-    padding-bottom: 0.25rem;
+    padding-bottom: 10px;
+    margin: 0;
+    min-height: 0;
+    box-sizing: border-box;
   }
 
-  .why-choose-tile-title {
+  .why-choose-tile-number p {
+    height: auto;
+    margin: 0;
+  }
+
+  .why-choose-tile-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-height: 0;
+  }
+
+  .why-choose-tile-title,
+  .why-choose-tile-subtitle,
+  .why-choose-tile-text {
+    margin: 0;
+    padding: 0;
     font-size: 1.25rem;
+  }
+
+  .why-choose-tile-subtitle {
+    font-size: 1rem;
   }
 
   .why-choose-tile-text {
     font-size: 0.95rem;
   }
 
-  /* How I Work page */
+  /* How I Work page – match combined-cta-section mobile (button size, width, vertical centering) */
   .how-i-work-cta-section {
     flex-direction: column;
   }
@@ -3086,25 +3163,43 @@ main {
   .clients-notice-half,
   .how-i-work-cta-half {
     width: 100%;
-    min-height: 380px;
+    flex: 1 1 0;
+    min-height: 50vh;
     margin: 0;
+    display: flex;
+    flex-direction: column;
   }
 
-  /* Remove gap below CTA overlay on mobile only */
+  .clients-notice-half .clients-notice-background,
   .how-i-work-cta-half .how-i-work-cta-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    flex: 1;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
   }
 
+  .clients-notice-half .how-i-work-cta-overlay,
   .how-i-work-cta-half .how-i-work-cta-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    flex: 1;
+    min-height: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: var(--spacing-md) var(--spacing-sm);
+    padding-bottom: 0;
+  }
+
+  .clients-notice-half .how-i-work-cta-overlay {
+    padding: var(--spacing-md) var(--spacing-sm);
+  }
+
+  .how-i-work-cta-section .clients-notice-btn,
+  .how-i-work-cta-section .how-i-work-cta-form .btn {
+    width: auto;
+    max-width: 280px;
+    align-self: center;
   }
 
   .intro-content-wrapper,

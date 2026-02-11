@@ -156,17 +156,17 @@ function Contact() {
               <h1 className="page-headline">Request a<br></br> <span>Consultation</span></h1>
               <div className="contact-hero-copy">
                 <p>
-                  If you'd like to explore whether working together makes sense, I'd be glad to talk.
+                  If you'd like to explore whether working together makes sense, we should talk.
                 </p>
                 <p>
-                  The first conversation is simple. We'll look at what's working, where things feel uncertain, and whether there's a useful next step.
+                  The first conversation is simple. You can share what's working with your business, where things feel uncertain, and what direction you're hoping to go. I listen, and let you know if/where I can help.
                 </p>
                 <p className="contact-hero-note">
                   I work with a limited number of clients at a time so I can stay focused and involved. If it feels like a fit, I'll follow up personally.
                 </p>
               </div>
               <div className="contact-hero-left-image-wrap">
-                <img src="/imgs/contact-page.png" alt="" className="contact-hero-left-image" />
+                <img src={`${process.env.PUBLIC_URL || ''}/imgs/contact-page.png`} alt="" className="contact-hero-left-image" />
                 <div className="contact-hero-left-image-overlay" aria-hidden="true" />
               </div>
             </div>

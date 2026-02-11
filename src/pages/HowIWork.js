@@ -13,7 +13,7 @@ function HowIWork() {
               <div className="intro-content">
                 <p>My work is structured, practical, and execution-focused.</p>
                 <p>
-                  I step in when a business has outgrown the way it currently runs — when decisions feel heavier, coordination takes longer than it should, and growth starts to introduce strain instead of momentum.
+                  I step in when a business has outgrown the way it currently runs; when decisions feel heavier, coordination takes longer than it should, and growth starts to introduce strain instead of momentum.
                 </p>
                 <p>
                   The goal is simple: bring clarity, consistency, and capacity back into the business so growth becomes easier to manage, not harder.
@@ -22,7 +22,7 @@ function HowIWork() {
             </div>
             <div className="intro-image-wrapper">
               <img
-                src="/imgs/window-refleciton.jpg"
+                src={`${process.env.PUBLIC_URL || ''}/imgs/window-refleciton.jpg`}
                 alt="Window reflection"
                 className="intro-image"
               />
@@ -38,30 +38,35 @@ function HowIWork() {
           <div className="intro-content-wrapper">
             <div className="intro-image-wrapper">
               <img
-                src="/imgs/laptop-desk.jpg"
+                src={`${process.env.PUBLIC_URL || ''}/imgs/laptop-desk.jpg`}
                 alt="Business operations"
                 className="intro-image"
               />
             </div>
             <div className="intro-text">
               <p className="intro-content">
-                I don’t come in with a one-size-fits-all system. I work with what’s already there and move it toward something clearer and easier to run.
+                I don’t arrive with a pre-packaged system or a rigid framework. Every business already has a way of operating, even if it hasn’t been fully named or intentionally designed.
               </p>
               <p className="intro-content" style={{marginTop: '1.5rem', marginBottom: '1rem'}}>
-                We focus on how work flows through the business — where it speeds up, where it stalls, and where simple changes can make the biggest difference.
+                The work starts by understanding how things actually function today, then shaping that reality into something clearer and easier to run.
               </p>
-              <h3 className="intro-content" style={{marginTop: '1.5rem', marginBottom: '1rem'}}>The result is practical improvements you can use right away:</h3>
+              <h3 className="intro-content" style={{marginTop: '1.5rem', marginBottom: '1rem'}}>In practice, this means:</h3>
               <ul className="intro-content" style={{listStyle: 'disc', paddingLeft: '1.5rem', marginTop: '1rem'}}>
-                <li style={{marginBottom: '0.75rem'}}>Work moves with fewer handoffs</li>
-                <li style={{marginBottom: '0.75rem'}}>Ownership is easier to see</li>
+                <li style={{marginBottom: '0.75rem'}}>Work moves with fewer unnecessary handoffs</li>
+                <li style={{marginBottom: '0.75rem'}}>Ownership becomes easier to see</li>
                 <li style={{marginBottom: '0.75rem'}}>Internal structure matures to make scaling smoother</li>
               </ul>
               <p className="intro-content" style={{marginTop: '1.5rem'}}>
-                The work is collaborative and hands-on, aimed at progress you can feel in day-to-day operations, not just plans on a page.
+                The work is collaborative and hands-on, focused on changes that improve day-to-day execution, not abstract plans or documentation for its own sake.
               </p>
             </div>
           </div>
         </div>
+      </section>
+
+      <section className="about-features-section">
+        <h3 className="how-i-work-step-title  section-headline-centered">The Fundamental Progression</h3>
+        <p className="how-i-work-subheadline section-subheadline">Every engagement follows a core progression, adapted to your team, your clients, and your stage of growth.</p>
       </section>
 
       {/* Process Steps - Single Column with Alternating Image Layout */}
@@ -76,25 +81,25 @@ function HowIWork() {
                   Clarity comes before correction.
                 </p>
                 <p className="how-i-work-step-text">
-                  We start by understanding how work actually moves through the business today — not how it's supposed to work on paper.
+                  We begin by making the current operating reality visible, not how the business is supposed to run, but how it actually does today.
                 </p>
                 <p className="how-i-work-step-text" style={{marginTop: '1rem'}}>This includes:</p>
                 <ul className="how-i-work-step-text" style={{listStyle: 'disc', paddingLeft: '1.5rem', marginTop: '0.5rem'}}>
                   <li style={{marginBottom: '0.5rem'}}>How new work enters the system</li>
-                  <li style={{marginBottom: '0.5rem'}}>How priorities are set and changed</li>
+                  <li style={{marginBottom: '0.5rem'}}>How priorities are set and revised</li>
                   <li style={{marginBottom: '0.5rem'}}>How decisions get made</li>
-                  <li style={{marginBottom: '0.5rem'}}>How responsibilities move between people</li>
+                  <li style={{marginBottom: '0.5rem'}}>How responsibilities move between people and teams</li>
                 </ul>
                 <p className="how-i-work-step-text" style={{marginTop: '1.5rem', fontWeight: '600'}}>
-                  The goal is shared visibility. Not judgment. Not blame. Just a clear picture of what's real.
+                  The goal is shared visibility. Not judgment. Not blame. Just a clear picture of what’s real.
                 </p>
                 <p className="how-i-work-step-text" style={{marginTop: '1rem'}}>
-                  Most businesses have never paused long enough to see their full operating picture laid out end to end. This step alone often creates immediate alignment across leadership and teams.
+                  Most businesses have never paused long enough to see their full operating picture laid out end-to-end. This step alone often creates immediate alignment across leadership and teams.
                 </p>
               </div>
               <div className="how-i-work-step-image-wrapper">
                 <img 
-                  src="/imgs/howiwork_step1.png" 
+                  src={`${process.env.PUBLIC_URL || ''}/imgs/howiwork_step1.png`} 
                   alt="Map the work before you change the work" 
                   className="how-i-work-step-image"
                 />
@@ -106,7 +111,7 @@ function HowIWork() {
             <div className="how-i-work-step step-image-left">
               <div className="how-i-work-step-image-wrapper">
                 <img 
-                  src="/imgs/howiwork_step2.png" 
+                  src={`${process.env.PUBLIC_URL || ''}/imgs/howiwork_step2.png`} 
                   alt="Fix the few things causing the most drag" 
                   className="how-i-work-step-image"
                 />
@@ -121,7 +126,7 @@ function HowIWork() {
                   Once the flow of work is visible, patterns emerge quickly.
                 </p>
                 <p className="how-i-work-step-text" style={{marginTop: '1rem'}}>
-                  We focus on the small number of issues that create a disproportionate amount of friction, such as:
+                  Rather than redesigning everything, we focus on the small number of issues that create a disproportionate amount of friction, such as:
                 </p>
                 <ul className="how-i-work-step-text" style={{listStyle: 'disc', paddingLeft: '1.5rem', marginTop: '0.5rem'}}>
                   <li style={{marginBottom: '0.5rem'}}>Unclear ownership</li>
@@ -133,7 +138,7 @@ function HowIWork() {
                   Rather than redesigning everything, we target the pressure points that slow the business down the most.
                 </p>
                 <p className="how-i-work-step-text" style={{marginTop: '1rem'}}>
-                  This is typically where teams start to feel immediate relief — fewer interruptions, clearer direction, and smoother delivery.
+                  Addressing these pressure points is typically where teams feel relief first, providing fewer interruptions, clearer direction, and smoother delivery.
                 </p>
               </div>
             </div>
@@ -164,7 +169,7 @@ function HowIWork() {
               </div>
               <div className="how-i-work-step-image-wrapper">
                 <img 
-                  src="/imgs/howiwork_step3.png" 
+                  src={`${process.env.PUBLIC_URL || ''}/imgs/howiwork_step3.png`} 
                   alt="Turn tribal knowledge into a usable playbook" 
                   className="how-i-work-step-image"
                 />
@@ -176,7 +181,7 @@ function HowIWork() {
             <div className="how-i-work-step step-image-left">
               <div className="how-i-work-step-image-wrapper">
                 <img 
-                  src="/imgs/howiwork_step4.png" 
+                  src={`${process.env.PUBLIC_URL || ''}/imgs/howiwork_step4.png`} 
                   alt="Reduce overload and create capacity" 
                   className="how-i-work-step-image"
                 />
@@ -205,7 +210,7 @@ function HowIWork() {
                   <li style={{marginBottom: '0.5rem'}}>Tools and systems that genuinely reduce effort instead of adding complexity</li>
                 </ul>
                 <p className="how-i-work-step-text" style={{marginTop: '1.5rem', fontWeight: '600'}}>
-                  The goal is to create space — for better decisions, stronger execution, and more intentional growth.
+                  The goal is to create space for better decisions, stronger execution, and more intentional growth.
                 </p>
               </div>
             </div>
@@ -219,7 +224,7 @@ function HowIWork() {
         <div className="clients-notice-half">
           <div className="clients-notice-background">
             <img 
-              src='/imgs/growing-entrepreneur.jpg' 
+              src={`${process.env.PUBLIC_URL || ''}/imgs/growing-entrepreneur.jpg`} 
               alt="Client results" 
               className="clients-notice-bg-image"
             />
@@ -229,9 +234,9 @@ function HowIWork() {
                  What Clients Usually Notice First
                 </h2>
                 <ul className="clients-notice-list">
-                  <li>- Work feels steadier</li> 
-                  <li>- Ownership is clearer</li>
-                  <li>- Fewer things fall through the cracks</li>
+                  <li>Work feels steadier</li>
+                  <li>Ownership is clearer</li>
+                  <li>Fewer things fall through the cracks</li>
                 </ul>
                 <p className="how-i-work-cta-text">
                   We’ll look at what’s working, what feels fragile, and whether it makes sense to work together.
@@ -250,7 +255,7 @@ function HowIWork() {
         <div className="how-i-work-cta-half">
           <div className="how-i-work-cta-background">
             <img 
-              src='/imgs/business-consultation.jpg'
+              src={`${process.env.PUBLIC_URL || ''}/imgs/business-consultation.jpg`}
               alt="Business consultation" 
               className="how-i-work-cta-bg-image"
             />

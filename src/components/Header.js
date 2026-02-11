@@ -25,7 +25,7 @@ function Header() {
         <div className="header-container">
           <div className="logo-container">
             <Link to="/" className="logo-link">
-              <img src="/imgs/main_logo.png" alt="Dinar Davis" className="logo" />
+              <img src={`${process.env.PUBLIC_URL || ''}/imgs/main_logo.png`} alt="Dinar Davis" className="logo" />
                <p className="logo-text">Operations &<br></br>Infrastructure</p>
             </Link>
           </div>

@@ -7,7 +7,7 @@ function Footer() {
       <div className="footer-container">
         <Link to="/" className="footer-logo-link">
           <img
-            src="/imgs/main_logo.png"
+            src={`${process.env.PUBLIC_URL || ''}/imgs/main_logo.png`}
             alt="Dinar Davis"
             className="footer-logo"
           />

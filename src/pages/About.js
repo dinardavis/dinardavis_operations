@@ -21,7 +21,9 @@ function About() {
               <h2 className="page-headline"><span style={{marginLeft: 0}}>Hi, I'm Dinar.</span></h2>
               <div className="intro-content">
                 <p>
-                  Since I don't have any hair to let down, I wear hats. Lots of hats. Which also makes me uniquely qualified for this work. (I kid! I kid!) But really, I wanted to give you a chance to get to know me a little better - not just what I do, but why I've ended up doing this work in the first place.
+                  Since I don't have any hair to let down, I wear hats. Lots of hats. Which also makes me uniquely qualified for this work. (I kid! I kid!)</p>
+                  
+                <p>But really, I wanted to give you a chance to get to know me a little better. Not just what I do, but why I've ended up doing this work in the first place.
                 </p>
                 <p>
                   I've always had a natural pull toward order. Not the rigid, color-coded-for-everything kind, but the logical flow of things that makes you feel lighter when they're working the way they should. Over time, that instinct kept putting me in environments where complexity was the norm and clarity was the difference between progress and chaos.
@@ -30,7 +32,7 @@ function About() {
             </div>
             <div className="about-intro-image-wrapper">
               <img 
-                src="/imgs/about_dinar.jpg" 
+                src={`${process.env.PUBLIC_URL || ''}/imgs/about_dinar.jpg`} 
                 alt="Dinar Davis" 
                 className="about-intro-image"
               />
@@ -45,11 +47,11 @@ function About() {
           <h2 className="section-headline">Where I've Spent My Time</h2>
           <div className="section-content">
             <p>
-              Over the last 15+ years, I've worked inside organizations where people, systems, and decisions had to hold up under real pressure.
+              Over the last 15+ years, I've worked with organizations where people, systems, and decisions had to hold up under real pressure.
             </p>
             <p>That's taken me through:</p>
             <ul className="about-list">
-              <li>Television production finance at 20th Century Fox, supporting large-scale scripted productions like <span>The Simpsons</span>, <span>Modern Family</span>, <span>Family Guy</span>, and <span>American Dad!</span>, where timelines, budgets, and coordination had to stay aligned across hundreds of moving parts</li>
+              <li>Television production finance at 20th Century Studios, supporting large-scale scripted productions like <span>The Simpsons</span>, <span>Modern Family</span>, <span>Family Guy</span>, and <span>American Dad!</span>, where timelines, budgets, and coordination had to stay aligned across hundreds of moving parts</li>
               <li>Operations leadership in nonprofit organizations, overseeing budgets, payroll, facilities, and multi-site teams in environments where resources were limited and impact mattered</li>
               <li>Hospitality operations at Wynn & Encore Resorts, Four Seasons, and Ritz-Carlton, managing high-volume teams and service workflows where consistency and execution made or broke the experience</li>
               <li>Copywriting and campaign work for brands like Disney, GM, P&G, Pfizer, and AT&T, helping shape messaging that had to move through complex approval paths and real-world delivery systems</li>
@@ -67,7 +69,7 @@ function About() {
           <div className="about-content-wrapper about-content-image-left">
             <div className="about-content-image-wrapper">
               <img
-                src="/imgs/how-that-shapes.png"
+                src={`${process.env.PUBLIC_URL || ''}/imgs/how-that-shapes.png`}
                 alt="How that shapes my work today"
                 className="about-content-image"
               />
@@ -77,11 +79,11 @@ function About() {
               <h2 className="section-headline">How That Shapes My Work Today</h2>
               <div className="section-content">
                 <p>
-                  I work with growing businesses that have reached the point where the way they operate hasn't quite caught up to the size of what they've built.
+                  I work with growing businesses that have reached the point where the way they operate hasn't quite caught up to the size or business volume they've built.
                 </p>
                 <p>
                   My role isn't to impose a framework or sell a methodology.<br />
-                  It's to step into the reality of how your business actually runs — and help shape it into something clearer, steadier, and easier to manage.
+                  It's to step into the reality of how your business actually runs, and help shape it into something clearer, steadier, and easier to manage.
                 </p>
                 <p>
                   The work is practical, hands-on, and grounded in day-to-day execution. Less theory. More doing.
@@ -103,7 +105,7 @@ function About() {
                   Most of the time, it's some version of this:
                 </p>
                 <p style={{fontWeight: '600', fontStyle: 'italic', marginTop: '1rem'}}>
-                  Things are working — but they feel heavier than they should.
+                  Things are working... but they feel more cumbersome than they should.
                 </p>
                 <p style={{marginTop: '1rem'}}>
                   That's usually where I'm most useful. Helping teams reduce unnecessary friction, clarify ownership and flow, and build internal structure that can support the next stage of growth without constant strain.
@@ -112,7 +114,7 @@ function About() {
             </div>
             <div className="about-content-image-wrapper">
               <img
-                src="/imgs/what-clients-come-to.png"
+                src={`${process.env.PUBLIC_URL || ''}/imgs/what-clients-come-to.png`}
                 alt="What clients usually come to me for"
                 className="about-content-image"
               />

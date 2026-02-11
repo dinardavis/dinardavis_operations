@@ -4,11 +4,10 @@ import { FaShieldAlt, FaSitemap, FaTachometerAlt, FaUsers } from 'react-icons/fa
 
 function Home() {
   useEffect(() => {
-    // Set the hero background image as a CSS variable
-    document.documentElement.style.setProperty(
-      '--hero-bg-image',
-      `url('${process.env.PUBLIC_URL || ''}/imgs/hero-background.png')`
-    );
+    // Set the hero and feature-card-header background images as CSS variables
+    const base = process.env.PUBLIC_URL || '';
+    document.documentElement.style.setProperty('--hero-bg-image', `url('${base}/imgs/hero-background.png')`);
+    document.documentElement.style.setProperty('--feature-card-header-bg', `url('${base}/imgs/overhead-laptops-desk.jpg')`);
   }, []);
 
   return (
@@ -17,72 +16,72 @@ function Home() {
       <section className="hero">
         <div className="container">
           <div className="hero-content">
-            <div className='hero-header'>
+            <div className="hero-header">
               <h1 className="hero-headline hero-headline-1">Making your business <span>easier to run</span></h1>
               <p className="hero-subheadline">
-              I help agencies and entrepreneurs develop and codify their operational infrastructure to streamline processes for sustained success.
-            </p>
+                I help agencies and entrepreneurs develop and codify their operational infrastructure to streamline processes for sustained success.
+              </p>
             </div>
           </div>
           <div className="hero-stats">
             <div className="hero-stat-card hero-stat-left logo-ticker">
-              <div className="logo-ticker-header"><span>Two decades</span> of experience inside complex, high-performing organizations</div>
+              <div className="logo-ticker-header"><span>Two decades</span> of experience with complex, high-performing organizations</div>
               <div className="logo-ticker-wrapper">
                 <div className="logo-ticker-track">
                   <div className="logo-ticker-item">
-                    <img src="/imgs/brand_logos/fox.png" alt="20th Century Fox" className="brand-logo" />
+                    <img src={`${process.env.PUBLIC_URL || ''}/imgs/brand_logos/fox.png`} alt="20th Century Fox" className="brand-logo" />
                   </div>
                   <div className="logo-ticker-item">
-                    <img src="/imgs/brand_logos/disney.png" alt="Disney" className="brand-logo" />
+                    <img src={`${process.env.PUBLIC_URL || ''}/imgs/brand_logos/disney.png`} alt="Disney" className="brand-logo" />
                   </div>
                   <div className="logo-ticker-item">
-                    <img src="/imgs/brand_logos/GM.png" alt="GM" className="brand-logo" />
+                    <img src={`${process.env.PUBLIC_URL || ''}/imgs/brand_logos/GM.png`} alt="GM" className="brand-logo" />
                   </div>
                   <div className="logo-ticker-item">
-                    <img src="/imgs/brand_logos/P&G_logo.png" alt="P&G" className="brand-logo" />
+                    <img src={`${process.env.PUBLIC_URL || ''}/imgs/brand_logos/P&G_logo.png`} alt="P&G" className="brand-logo" />
                   </div>
                   <div className="logo-ticker-item">
-                    <img src="/imgs/brand_logos/pfizer.svg" alt="Pfizer" className="brand-logo" />
+                    <img src={`${process.env.PUBLIC_URL || ''}/imgs/brand_logos/pfizer.svg`} alt="Pfizer" className="brand-logo" />
                   </div>
                   <div className="logo-ticker-item">
-                    <img src="/imgs/brand_logos/att.svg" alt="AT&T" className="brand-logo" />
+                    <img src={`${process.env.PUBLIC_URL || ''}/imgs/brand_logos/att.svg`} alt="AT&T" className="brand-logo" />
                   </div>
                   <div className="logo-ticker-item">
-                    <img src="/imgs/brand_logos/wynn.svg" alt="Wynn Resorts" className="brand-logo" />
+                    <img src={`${process.env.PUBLIC_URL || ''}/imgs/brand_logos/wynn.svg`} alt="Wynn Resorts" className="brand-logo" />
                   </div>
                   <div className="logo-ticker-item">
-                    <img src="/imgs/brand_logos/fourseasons.png" alt="Four Seasons Resorts" className="brand-logo" />
+                    <img src={`${process.env.PUBLIC_URL || ''}/imgs/brand_logos/fourseasons.png`} alt="Four Seasons Resorts" className="brand-logo" />
                   </div>
                   <div className="logo-ticker-item">
-                    <img src="/imgs/brand_logos/ritz.png" alt="Ritz-Carlton" className="brand-logo" />
+                    <img src={`${process.env.PUBLIC_URL || ''}/imgs/brand_logos/ritz.png`} alt="Ritz-Carlton" className="brand-logo" />
                   </div>
                   {/* Duplicate for seamless loop */}
                   <div className="logo-ticker-item">
-                    <img src="/imgs/brand_logos/fox.png" alt="20th Century Fox" className="brand-logo" />
+                    <img src={`${process.env.PUBLIC_URL || ''}/imgs/brand_logos/fox.png`} alt="20th Century Fox" className="brand-logo" />
                   </div>
                   <div className="logo-ticker-item">
-                    <img src="/imgs/brand_logos/disney.png" alt="Disney" className="brand-logo" />
+                    <img src={`${process.env.PUBLIC_URL || ''}/imgs/brand_logos/disney.png`} alt="Disney" className="brand-logo" />
                   </div>
                   <div className="logo-ticker-item">
-                    <img src="/imgs/brand_logos/GM.png" alt="GM" className="brand-logo" />
+                    <img src={`${process.env.PUBLIC_URL || ''}/imgs/brand_logos/GM.png`} alt="GM" className="brand-logo" />
                   </div>
                   <div className="logo-ticker-item">
-                    <img src="/imgs/brand_logos/P&G_logo.png" alt="P&G" className="brand-logo" />
+                    <img src={`${process.env.PUBLIC_URL || ''}/imgs/brand_logos/P&G_logo.png`} alt="P&G" className="brand-logo" />
                   </div>
                   <div className="logo-ticker-item">
-                    <img src="/imgs/brand_logos/pfizer.svg" alt="Pfizer" className="brand-logo" />
+                    <img src={`${process.env.PUBLIC_URL || ''}/imgs/brand_logos/pfizer.svg`} alt="Pfizer" className="brand-logo" />
                   </div>
                   <div className="logo-ticker-item">
-                    <img src="/imgs/brand_logos/att.svg" alt="AT&T" className="brand-logo" />
+                    <img src={`${process.env.PUBLIC_URL || ''}/imgs/brand_logos/att.svg`} alt="AT&T" className="brand-logo" />
                   </div>
                   <div className="logo-ticker-item">
-                    <img src="/imgs/brand_logos/wynn.svg" alt="Wynn Resorts" className="brand-logo" />
+                    <img src={`${process.env.PUBLIC_URL || ''}/imgs/brand_logos/wynn.svg`} alt="Wynn Resorts" className="brand-logo" />
                   </div>
                   <div className="logo-ticker-item">
-                    <img src="/imgs/brand_logos/fourseasons.png" alt="Four Seasons Resorts" className="brand-logo" />
+                    <img src={`${process.env.PUBLIC_URL || ''}/imgs/brand_logos/fourseasons.png`} alt="Four Seasons Resorts" className="brand-logo" />
                   </div>
                   <div className="logo-ticker-item">
-                    <img src="/imgs/brand_logos/ritz.png" alt="Ritz-Carlton" className="brand-logo" />
+                    <img src={`${process.env.PUBLIC_URL || ''}/imgs/brand_logos/ritz.png`} alt="Ritz-Carlton" className="brand-logo" />
                   </div>
                 </div>
               </div>
@@ -101,30 +100,25 @@ function Home() {
       {/* About/Feature Cards Section */}
       <section className="about-features-section">
         <h2 className="section-headline-centered">You've Built a Growing Business. So Why Are Things Feeling Harder Than Ever?</h2>
-    <p className="section-subheadline" >
-      This is often the transition from a business that runs on momentum to one that needs to run on structure. What worked early on starts to need a more intentional shape.
-    </p>
+        <p className="section-subheadline">
+          There’s a point where growth quietly changes the nature of a business. What once ran on momentum starts to demand structure. More clients add complexity. New partners and hires introduce dependencies. The stakes rise, and the margin for improvisation gets smaller.
+        </p>
         <div className="container">
           <div className="feature-cards-grid">
-            {/* Top-left: Header */}
             <div className="feature-card feature-card-header">
               <h2 className="feature-card-title">Growth shouldn’t make your business harder to manage.</h2>
             </div>
-            
-            {/* Top-right: Text content */}
             <div className="feature-card feature-card-medium">
               <p className="feature-card-text">
-                <span>As businesses grow, internal systems often fail to keep pace.</span> Processes evolve informally. Decisions slow down. Bottlenecks appear. Work becomes fragmented, and the cost of coordination increases.
+                <span>At a certain stage, effort stops being the limiting factor.</span> Brute force isn’t enough to keep up. What matters instead is how work actually moves through the organization.
               </p>
                <p className="feature-card-text">
-                The result isn't failure, it's friction. And over time, that strain makes growth feel heavier than it should.
+                Without that clarity, teams start compensating. Founders step in more often. Fixes are made on the fly rather than by design.
               </p>
               <p className="feature-card-text">
-                I help businesses put the right foundations in place so scaling feels controlled instead of chaotic.
+                That’s the moment when the business needs help operationalizing how it works, not just pushing harder. That’s where I come in.
               </p>
             </div>
-            
-            {/* Bottom-left: Operational stability content */}
             <div className="feature-card feature-card-accent-dark">
               <div className="feature-card-text">
                 <p>What is my role?</p>
@@ -132,13 +126,11 @@ function Home() {
                 <p><FaSitemap className="feature-card-icon" /> Clarify how work moves through the organization</p>
                 <h2 className="feature-card-title light-card-title">Operational stability for growing teams.</h2>
                 <p><FaTachometerAlt className="feature-card-icon" /> Reduce bottlenecks and unnecessary friction</p>
-                <p><FaUsers className="feature-card-icon" /> Relieve pressure across teams</p>
+                <p><FaUsers className="feature-card-icon" /> Relieve pressure across teams so capacity returns</p>
               </div>
             </div>
-            
-            {/* Bottom-right: Image */}
-            <div className='feature-card feature-card-img-container'>
-              <img className='feature-card-img' src='/imgs/how_dinar.jpg' alt='' />
+            <div className="feature-card feature-card-img-container">
+              <img className="feature-card-img" src={`${process.env.PUBLIC_URL || ''}/imgs/how_dinar.jpg`} alt="" />
             </div>
           </div>
         </div>
@@ -147,78 +139,71 @@ function Home() {
       {/* Why Choose Section - How I Work Preview */}
      <section className="why-choose-section why-choose-tile-section">
   <div className="container">
-    <h2 className="section-headline-centered">My Approach: Focused. Deliberate. Effective.</h2>
+            <h2 className="section-headline-centered">My Approach: Focused. Deliberate. Effective.</h2>
     <p className="section-subheadline" style={{ marginBottom: "1rem" }}>
-      I work with businesses that have reached a point where growth has outpaced internal structure.
-The goal isn’t to add complexity — it’s to bring clarity, consistency, and breathing room back into the day-to-day.
+      I work with businesses at the point where growth needs to be supported by intention, not improvisation. The goal isn’t to layer on process, it’s to make the existing operation clearer, steadier, and easier to manage day to day.
     </p>
     <p className="section-subheadline" style={{ marginBottom: "2rem" }}>
-      I believe in a core progression, adapted to the realities of your team, your clients, and your stage of growth:
+      I follow a simple progression, shaped to the realities of your team, your clients, and where the business is today:
     </p>
-
-    <div className="why-choose-tile-list">
+          <div className="why-choose-tile-list">
       {/* 1 */}
-      <div className="why-choose-tile">
+            <div className="why-choose-tile">
         <div className="why-choose-tile-number" aria-hidden="true">
           <p>1</p>
         </div>
         <div className="why-choose-tile-content">
           <h3 className="why-choose-tile-title">See how work actually flows</h3>
-          <p className='why-choose-tile-subtitle'>Surface the real operating picture before changing anything.</p>
+          <p className='why-choose-tile-subtitle'>Establish a shared view of how the business really operates.</p>
           <p className="why-choose-tile-text">
-            I look beyond org charts and tools to understand how decisions are made, how priorities shift, and where work slows down or gets stuck.
+            Before changing anything, we examine how work enters the system now, how decisions get made, and where momentum slows or stalls.
           </p>
         </div>
       </div>
-
-      {/* 2 */}
-      <div className="why-choose-tile">
+            {/* 2 */}
+            <div className="why-choose-tile">
         <div className="why-choose-tile-number" aria-hidden="true">2</div>
         <div className="why-choose-tile-content">
           <h3 className="why-choose-tile-title">Address the biggest pressure points</h3>
-          <p className='why-choose-tile-subtitle'>Fix the few things that create the most drag.</p>
+          <p className='why-choose-tile-subtitle'>Focus effort where it makes the most difference.</p>
           <p className="why-choose-tile-text">
-            We focus on the small number of issues creating the most friction — unclear ownership, broken handoffs, and inconsistent prioritization.
+            Rather than tackling everything at once, we target the issues creating the most drag. Fixing unclear ownership, broken handoffs, or inconsistent priorities often unlocks disproportionate relief.
           </p>
         </div>
       </div>
-
-      {/* 3 */}
-      <div className="why-choose-tile">
+            {/* 3 */}
+            <div className="why-choose-tile">
         <div className="why-choose-tile-number" aria-hidden="true">3</div>
         <div className="why-choose-tile-content">
           <h3 className="why-choose-tile-title">Make the essentials repeatable</h3>
-          <p className='why-choose-tile-subtitle'>Turn experience into something the team can rely on.</p>
+          <p className='why-choose-tile-subtitle'>Turn what works into something dependable.</p>
           <p className="why-choose-tile-text">
-            Key workflows and expectations are turned into simple, usable standards the team can rely on.
+            As friction comes down, we codify the workflows and expectations the team relies on most. The goal is consistency without rigidity. We're striving for guidance people can use without slowing them down.
           </p>
         </div>
       </div>
-
-      {/* 4 */}
-      <div className="why-choose-tile">
+            {/* 4 */}
+            <div className="why-choose-tile">
         <div className="why-choose-tile-number" aria-hidden="true">4</div>
         <div className="why-choose-tile-content">
           <h3 className="why-choose-tile-title">Create room to grow</h3>
-          <p className='why-choose-tile-subtitle'>Reduce overload and restore capacity.</p>
+          <p className='why-choose-tile-subtitle'>Restore capacity so growth can be intentional.</p>
           <p className="why-choose-tile-text">
-            We reduce overload and restore capacity so growth feels intentional instead of reactive.
+            With clearer flow and fewer bottlenecks, pressure comes down. The business gains breathing room, and growth becomes something you can steer instead of react to.
           </p>
         </div>
       </div>
-    </div>
-
-    <div className="why-choose-tile-footer">
-      <h3 className="why-choose-tile-footer-text">
-        Curious for more details about my process?
-      </h3>
-      <Link to="/how-i-work" className="btn btn-secondary">
-        Learn How I Work
-      </Link>
-    </div>
-  </div>
-</section>
-
+          </div>
+          <div className="why-choose-tile-footer">
+            <h3 className="why-choose-tile-footer-text">
+              Curious to see this in more detail?
+            </h3>
+            <Link to="/how-i-work" className="btn btn-secondary">
+              Learn How I Work
+            </Link>
+          </div>
+        </div>
+      </section>
 
       {/* Combined Services Preview and Footer CTA Section */}
       <section className="combined-cta-section">
@@ -226,7 +211,7 @@ The goal isn’t to add complexity — it’s to bring clarity, consistency, and
         <div className="services-preview-half">
           <div className="services-preview-background">
             <img 
-              src='/imgs/flexible-ways-to-engage.jpg' 
+              src={`${process.env.PUBLIC_URL || ''}/imgs/flexible-ways-to-engage.jpg`} 
               alt="Business consultation and services" 
               className="services-preview-bg-image"
             />
