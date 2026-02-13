@@ -1875,8 +1875,8 @@ main {
 .services-intro-image {
   width: 100%;
   height: auto;
-  border-radius: var(--radius-sm);
   object-fit: cover;
+  margin-top: -3rem;
 }
 
 /* How I Work Steps Section */
