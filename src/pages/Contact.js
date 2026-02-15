@@ -18,7 +18,7 @@ const TEAM_SIZE_OPTIONS = [
 ];
 
 const LOOKING_FOR_OPTIONS = [
-  { value: '', label: "Whether they're looking for:" },
+  { value: '', label: "What type of help you're looking for:" },
   { value: 'Project-based ops work', label: 'Project-based ops work' },
   { value: 'Fractional support', label: 'Fractional support' },
   { value: 'Advisory / planning help', label: 'Advisory / planning help' },
@@ -202,15 +202,18 @@ function Contact() {
                 <div className="contact-modal-icon-wrap">
                   <IoCheckmarkCircleSharp className="contact-modal-icon contact-modal-icon--success" />
                 </div>
-                <h2 id="contact-modal-title" className="contact-modal-title">Thanks — I've received your info, and will review it personally.</h2>
+                <h2 id="contact-modal-title" className="contact-modal-title">Thank you! I've received your info, and will review it personally.</h2>
                 <p className="contact-modal-text">
-                  If you'd like to skip the scheduling back-and-forth, you can grab a time below. Otherwise, I'll follow up shortly.
+                  If you'd like to skip the scheduling back-and-forth, you can grab a time yourself at the link below. 
+                </p>
+                <p className="contact-modal-text">
+                  Otherwise, I'll follow-up, shortly.
                 </p>
                 <a
                   href="https://calendly.com/dinardavis/30min"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn btn-primary contact-modal-btn"
+                  className="btn contact-modal-btn"
                 >
                   Schedule an Ops Fit Call
                 </a>
@@ -221,7 +224,7 @@ function Contact() {
                 <div className="contact-modal-icon-wrap">
                   <IoCloseCircleSharp className="contact-modal-icon contact-modal-icon--error" />
                 </div>
-                <h2 id="contact-modal-title" className="contact-modal-title">Something went wrong</h2>
+                <h2 id="contact-modal-title" className="contact-modal-title">Uh oh! Something went wrong</h2>
                 <p className="contact-modal-text">
                   Please double-check your info and try again.
                 </p>
@@ -238,13 +241,16 @@ function Contact() {
               <h1 className="page-headline">Request a<br></br> <span>Consultation</span></h1>
               <div className="contact-hero-copy">
                 <p>
-                  If you'd like to explore whether working together makes sense, we should talk.
+                  If you would like to explore whether working together makes sense, the best place to start is a conversation.
                 </p>
                 <p>
-                  The first conversation is simple. You can share what's working with your business, where things feel uncertain, and what direction you're hoping to go. I listen, and let you know if/where I can help.
+                  By sharing a few details about your business, we can get the ball rolling and schedule an initial consultation.
                 </p>
-                <p className="contact-hero-note">
-                  I work with a limited number of clients at a time so I can stay focused and involved. If it feels like a fit, I'll follow up personally.
+                <p>
+                  The first conversation is straightforward. You share what is working, where things feel uncertain, and what direction you are hoping to go. I listen and let you know where it looks like I can help.
+                </p>
+                <p>
+                   If this sounds useful, go ahead and reach out and I will follow up personally.
                 </p>
               </div>
               <div className="contact-hero-left-image-wrap">
