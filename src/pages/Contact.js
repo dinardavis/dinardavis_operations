@@ -1,27 +1,52 @@
+/**
+ * EmailJS template variables (form field names sent to your template):
+ * firstName, lastName, company, email, message, teamSize, lookingFor
+ */
 import React, { useState, useRef, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 import { IoCheckmarkCircleSharp, IoCloseCircleSharp } from 'react-icons/io5';
 
+const MESSAGE_MAX_LENGTH = 500;
+
+const TEAM_SIZE_OPTIONS = [
+  { value: '', label: 'Team size / stage' },
+  { value: 'Solo / Founder-only', label: 'Solo / Founder-only' },
+  { value: '2–10 people', label: '2–10 people' },
+  { value: '11–25 people', label: '11–25 people' },
+  { value: '26–50 people', label: '26–50 people' },
+  { value: '51+ people', label: '51+ people' },
+];
+
+const LOOKING_FOR_OPTIONS = [
+  { value: '', label: "Whether they're looking for:" },
+  { value: 'Project-based ops work', label: 'Project-based ops work' },
+  { value: 'Fractional support', label: 'Fractional support' },
+  { value: 'Advisory / planning help', label: 'Advisory / planning help' },
+];
+
 function Contact() {
-  const [popupDisplay, setPopupDisplay] = useState({ display: 'none' });
+  const [popupVisible, setPopupVisible] = useState(false);
   const [emailSuccess, setEmailSuccess] = useState(false);
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
     company: '',
     email: '',
-    message: ''
+    message: '',
+    teamSize: '',
+    lookingFor: '',
   });
   const [formInputsValid, setFormInputsValid] = useState({
     firstName: false,
     lastName: false,
     email: false,
-    message: false
+    message: false,
   });
   const [firstNameField, setFirstNameField] = useState(null);
   const [lastNameField, setLastNameField] = useState(null);
   const [emailField, setEmailField] = useState(null);
   const [messageField, setMessageField] = useState(null);
+  const modalRef = useRef(null);
 
   useEffect(() => {
     setFirstNameField(document.querySelector('.firstNameField'));
@@ -36,7 +61,9 @@ function Contact() {
       lastName: '',
       company: '',
       email: '',
-      message: ''
+      message: '',
+      teamSize: '',
+      lookingFor: '',
     });
   }
 
@@ -45,7 +72,7 @@ function Contact() {
       firstName: false,
       lastName: false,
       email: false,
-      message: false
+      message: false,
     });
   }
 
@@ -95,7 +122,7 @@ function Contact() {
     const { name, value, type, checked } = e.target;
     setFormData((prev) => ({
       ...prev,
-      [name]: type === 'checkbox' ? checked : value
+      [name]: type === 'checkbox' ? checked : value,
     }));
     validateFormInputs();
   }
@@ -115,7 +142,7 @@ function Contact() {
       if (!serviceId || !templateId || !publicKey) {
         console.error('EmailJS env missing. Add to .env: REACT_APP_SERVICE_ID, REACT_APP_TEMPLATE_ID, REACT_APP_PUBLIC_KEY');
         setEmailSuccess(false);
-        animatePopup();
+        setPopupVisible(true);
         return;
       }
 
@@ -125,12 +152,12 @@ function Contact() {
           setEmailSuccess(true);
           clearInputs();
           resetFormInputs();
-          animatePopup();
+          setPopupVisible(true);
         })
         .catch((err) => {
           console.error('EmailJS error:', err);
           setEmailSuccess(false);
-          animatePopup();
+          setPopupVisible(true);
         });
     } else {
       if (firstNameField && firstNameField.value.length === 0) firstNameField.classList.add('input-error');
@@ -140,15 +167,70 @@ function Contact() {
     }
   }
 
-  function animatePopup() {
-    setPopupDisplay({ display: 'flex', className: 'fadein' });
-    setTimeout(() => {
-      setPopupDisplay({ display: 'none', className: '' });
-    }, 4500);
+  function closeModal() {
+    setPopupVisible(false);
+  }
+
+  function handleOverlayClick(e) {
+    if (modalRef.current && !modalRef.current.contains(e.target)) {
+      closeModal();
+    }
   }
 
   return (
     <div className="contact">
+      {/* Success/Error modal - centered, close on X or click outside */}
+      {popupVisible && (
+        <div
+          className="contact-modal-overlay"
+          onClick={handleOverlayClick}
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="contact-modal-title"
+        >
+          <div className="contact-modal" ref={modalRef}>
+            <button
+              type="button"
+              className="contact-modal-close"
+              onClick={closeModal}
+              aria-label="Close"
+            >
+              ×
+            </button>
+            {emailSuccess ? (
+              <>
+                <div className="contact-modal-icon-wrap">
+                  <IoCheckmarkCircleSharp className="contact-modal-icon contact-modal-icon--success" />
+                </div>
+                <h2 id="contact-modal-title" className="contact-modal-title">Thanks — I've received your info, and will review it personally.</h2>
+                <p className="contact-modal-text">
+                  If you'd like to skip the scheduling back-and-forth, you can grab a time below. Otherwise, I'll follow up shortly.
+                </p>
+                <a
+                  href="https://calendly.com/dinardavis/30min"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary contact-modal-btn"
+                >
+                  Schedule an Ops Fit Call
+                </a>
+                <p className="contact-modal-sub">Initial Ops Fit Call (30 min)</p>
+              </>
+            ) : (
+              <>
+                <div className="contact-modal-icon-wrap">
+                  <IoCloseCircleSharp className="contact-modal-icon contact-modal-icon--error" />
+                </div>
+                <h2 id="contact-modal-title" className="contact-modal-title">Something went wrong</h2>
+                <p className="contact-modal-text">
+                  Please double-check your info and try again.
+                </p>
+              </>
+            )}
+          </div>
+        </div>
+      )}
+
       <section className="contact-hero-section">
         <div className="container">
           <div className="contact-hero-grid">
@@ -174,27 +256,6 @@ function Contact() {
             <div className="contact-hero-right">
               <div className="contact-form-card frosted-glass">
                 <form className="contact-form" onSubmit={sendEmail}>
-                  <div className="thank-you-popup" style={popupDisplay}>
-                    <p className="thank-you-copy success">{emailSuccess ? 'Success!' : 'Error!'}</p>
-                    <div className="checkmark-container">
-                      {emailSuccess ? (
-                        <IoCheckmarkCircleSharp className="thank-you-pop-checkmark" />
-                      ) : (
-                        <IoCloseCircleSharp className="thank-you-pop-error" />
-                      )}
-                    </div>
-                    {emailSuccess ? (
-                      <>
-                        <p className="thank-you-copy">Thanks for reaching out!</p>
-                        <p className="thank-you-copy">I'll be in touch soon.</p>
-                      </>
-                    ) : (
-                      <p className="thank-you-copy">
-                        Looks like something went wrong. Double check your info, and try again.
-                      </p>
-                    )}
-                  </div>
-
                   <div className="contact-form-grid">
                     <div className="form-group">
                       <input
@@ -205,6 +266,7 @@ function Contact() {
                         value={formData.firstName}
                         onChange={handleChange}
                         className="firstNameField"
+                        required
                       />
                     </div>
                     <div className="form-group">
@@ -216,6 +278,7 @@ function Contact() {
                         value={formData.lastName}
                         onChange={handleChange}
                         className="lastNameField"
+                        required
                       />
                     </div>
                     <div className="form-group contact-form-span-2">
@@ -223,7 +286,7 @@ function Contact() {
                         type="text"
                         id="company"
                         name="company"
-                        placeholder="Company"
+                        placeholder="Company website or relevant link"
                         value={formData.company}
                         onChange={handleChange}
                       />
@@ -237,17 +300,53 @@ function Contact() {
                         value={formData.email}
                         onChange={handleChange}
                         className="emailField"
+                        required
                       />
                     </div>
                     <div className="form-group contact-form-span-2">
+                      <select
+                        id="teamSize"
+                        name="teamSize"
+                        value={formData.teamSize}
+                        onChange={handleChange}
+                        className={`contact-form-select${!formData.teamSize ? ' contact-form-select--placeholder' : ''}`}
+                        aria-label="Team size / stage"
+                      >
+                        {TEAM_SIZE_OPTIONS.map((opt) => (
+                          <option key={opt.value || 'team-empty'} value={opt.value}>
+                            {opt.label}
+                          </option>
+                        ))}
+                      </select>
+                    </div>
+                    <div className="form-group contact-form-span-2">
+                      <select
+                        id="lookingFor"
+                        name="lookingFor"
+                        value={formData.lookingFor}
+                        onChange={handleChange}
+                        className={`contact-form-select${!formData.lookingFor ? ' contact-form-select--placeholder' : ''}`}
+                        aria-label="Whether they're looking for"
+                      >
+                        {LOOKING_FOR_OPTIONS.map((opt) => (
+                          <option key={opt.value || 'looking-empty'} value={opt.value}>
+                            {opt.label}
+                          </option>
+                        ))}
+                      </select>
+                    </div>
+                    <div className="form-group contact-form-span-2 contact-form-textarea-wrap">
                       <textarea
                         id="message"
                         name="message"
-                        placeholder="What's prompting you to reach out?"
+                        placeholder="What's broken or slowing the business down?"
                         value={formData.message}
                         onChange={handleChange}
                         className="messageField"
+                        maxLength={MESSAGE_MAX_LENGTH}
+                        required
                       />
+                      <p className="contact-form-char-note">Character limit 500</p>
                     </div>
                   </div>
 
