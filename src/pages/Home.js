@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FaShieldAlt, FaSitemap, FaTachometerAlt, FaUsers } from 'react-icons/fa';
+import { getPublicUrl } from '../utils/publicUrl';
 
 function Home() {
   useEffect(() => {
-    // Set the hero and feature-card-header background images as CSS variables
-    const base = process.env.PUBLIC_URL || '';
+    const base = getPublicUrl();
     document.documentElement.style.setProperty('--hero-bg-image', `url('${base}/imgs/hero-background.png')`);
     document.documentElement.style.setProperty('--feature-card-header-bg', `url('${base}/imgs/overhead-laptops-desk.jpg')`);
   }, []);
@@ -29,59 +29,59 @@ function Home() {
               <div className="logo-ticker-wrapper">
                 <div className="logo-ticker-track">
                   <div className="logo-ticker-item">
-                    <img src={`${process.env.PUBLIC_URL || ''}/imgs/brand_logos/fox.png`} alt="20th Century Fox" className="brand-logo" />
+                    <img src={`${getPublicUrl()}/imgs/brand_logos/fox.png`} alt="20th Century Fox" className="brand-logo" />
                   </div>
                   <div className="logo-ticker-item">
-                    <img src={`${process.env.PUBLIC_URL || ''}/imgs/brand_logos/disney.png`} alt="Disney" className="brand-logo" />
+                    <img src={`${getPublicUrl()}/imgs/brand_logos/disney.png`} alt="Disney" className="brand-logo" />
                   </div>
                   <div className="logo-ticker-item">
-                    <img src={`${process.env.PUBLIC_URL || ''}/imgs/brand_logos/GM.png`} alt="GM" className="brand-logo" />
+                    <img src={`${getPublicUrl()}/imgs/brand_logos/GM.png`} alt="GM" className="brand-logo" />
                   </div>
                   <div className="logo-ticker-item">
-                    <img src={`${process.env.PUBLIC_URL || ''}/imgs/brand_logos/P&G_logo.png`} alt="P&G" className="brand-logo" />
+                    <img src={`${getPublicUrl()}/imgs/brand_logos/P&G_logo.png`} alt="P&G" className="brand-logo" />
                   </div>
                   <div className="logo-ticker-item">
-                    <img src={`${process.env.PUBLIC_URL || ''}/imgs/brand_logos/pfizer.svg`} alt="Pfizer" className="brand-logo" />
+                    <img src={`${getPublicUrl()}/imgs/brand_logos/pfizer.svg`} alt="Pfizer" className="brand-logo" />
                   </div>
                   <div className="logo-ticker-item">
-                    <img src={`${process.env.PUBLIC_URL || ''}/imgs/brand_logos/att.svg`} alt="AT&T" className="brand-logo" />
+                    <img src={`${getPublicUrl()}/imgs/brand_logos/att.svg`} alt="AT&T" className="brand-logo" />
                   </div>
                   <div className="logo-ticker-item">
-                    <img src={`${process.env.PUBLIC_URL || ''}/imgs/brand_logos/wynn.svg`} alt="Wynn Resorts" className="brand-logo" />
+                    <img src={`${getPublicUrl()}/imgs/brand_logos/wynn.svg`} alt="Wynn Resorts" className="brand-logo" />
                   </div>
                   <div className="logo-ticker-item">
-                    <img src={`${process.env.PUBLIC_URL || ''}/imgs/brand_logos/fourseasons.png`} alt="Four Seasons Resorts" className="brand-logo" />
+                    <img src={`${getPublicUrl()}/imgs/brand_logos/fourseasons.png`} alt="Four Seasons Resorts" className="brand-logo" />
                   </div>
                   <div className="logo-ticker-item">
-                    <img src={`${process.env.PUBLIC_URL || ''}/imgs/brand_logos/ritz.png`} alt="Ritz-Carlton" className="brand-logo" />
+                    <img src={`${getPublicUrl()}/imgs/brand_logos/ritz.png`} alt="Ritz-Carlton" className="brand-logo" />
                   </div>
                   {/* Duplicate for seamless loop */}
                   <div className="logo-ticker-item">
-                    <img src={`${process.env.PUBLIC_URL || ''}/imgs/brand_logos/fox.png`} alt="20th Century Fox" className="brand-logo" />
+                    <img src={`${getPublicUrl()}/imgs/brand_logos/fox.png`} alt="20th Century Fox" className="brand-logo" />
                   </div>
                   <div className="logo-ticker-item">
-                    <img src={`${process.env.PUBLIC_URL || ''}/imgs/brand_logos/disney.png`} alt="Disney" className="brand-logo" />
+                    <img src={`${getPublicUrl()}/imgs/brand_logos/disney.png`} alt="Disney" className="brand-logo" />
                   </div>
                   <div className="logo-ticker-item">
-                    <img src={`${process.env.PUBLIC_URL || ''}/imgs/brand_logos/GM.png`} alt="GM" className="brand-logo" />
+                    <img src={`${getPublicUrl()}/imgs/brand_logos/GM.png`} alt="GM" className="brand-logo" />
                   </div>
                   <div className="logo-ticker-item">
-                    <img src={`${process.env.PUBLIC_URL || ''}/imgs/brand_logos/P&G_logo.png`} alt="P&G" className="brand-logo" />
+                    <img src={`${getPublicUrl()}/imgs/brand_logos/P&G_logo.png`} alt="P&G" className="brand-logo" />
                   </div>
                   <div className="logo-ticker-item">
-                    <img src={`${process.env.PUBLIC_URL || ''}/imgs/brand_logos/pfizer.svg`} alt="Pfizer" className="brand-logo" />
+                    <img src={`${getPublicUrl()}/imgs/brand_logos/pfizer.svg`} alt="Pfizer" className="brand-logo" />
                   </div>
                   <div className="logo-ticker-item">
-                    <img src={`${process.env.PUBLIC_URL || ''}/imgs/brand_logos/att.svg`} alt="AT&T" className="brand-logo" />
+                    <img src={`${getPublicUrl()}/imgs/brand_logos/att.svg`} alt="AT&T" className="brand-logo" />
                   </div>
                   <div className="logo-ticker-item">
-                    <img src={`${process.env.PUBLIC_URL || ''}/imgs/brand_logos/wynn.svg`} alt="Wynn Resorts" className="brand-logo" />
+                    <img src={`${getPublicUrl()}/imgs/brand_logos/wynn.svg`} alt="Wynn Resorts" className="brand-logo" />
                   </div>
                   <div className="logo-ticker-item">
-                    <img src={`${process.env.PUBLIC_URL || ''}/imgs/brand_logos/fourseasons.png`} alt="Four Seasons Resorts" className="brand-logo" />
+                    <img src={`${getPublicUrl()}/imgs/brand_logos/fourseasons.png`} alt="Four Seasons Resorts" className="brand-logo" />
                   </div>
                   <div className="logo-ticker-item">
-                    <img src={`${process.env.PUBLIC_URL || ''}/imgs/brand_logos/ritz.png`} alt="Ritz-Carlton" className="brand-logo" />
+                    <img src={`${getPublicUrl()}/imgs/brand_logos/ritz.png`} alt="Ritz-Carlton" className="brand-logo" />
                   </div>
                 </div>
               </div>
@@ -130,7 +130,7 @@ function Home() {
               </div>
             </div>
             <div className="feature-card feature-card-img-container">
-              <img className="feature-card-img" src={`${process.env.PUBLIC_URL || ''}/imgs/how_dinar.jpg`} alt="" />
+              <img className="feature-card-img" src={`${getPublicUrl()}/imgs/how_dinar.jpg`} alt="" />
             </div>
           </div>
         </div>
@@ -211,7 +211,7 @@ function Home() {
         <div className="services-preview-half">
           <div className="services-preview-background">
             <img 
-              src={`${process.env.PUBLIC_URL || ''}/imgs/flexible-ways-to-engage.jpg`} 
+              src={`${getPublicUrl()}/imgs/flexible-ways-to-engage.jpg`} 
               alt="Business consultation and services" 
               className="services-preview-bg-image"
             />

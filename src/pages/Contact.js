@@ -3,6 +3,7 @@
  * firstName, lastName, company, email, message, teamSize, lookingFor
  */
 import React, { useState, useRef, useEffect } from 'react';
+import { getPublicUrl } from '../utils/publicUrl';
 import emailjs from '@emailjs/browser';
 import { IoCheckmarkCircleSharp, IoCloseCircleSharp } from 'react-icons/io5';
 
@@ -254,7 +255,7 @@ function Contact() {
                 </p>
               </div>
               <div className="contact-hero-left-image-wrap">
-                <img src={`${process.env.PUBLIC_URL || ''}/imgs/contact-page.png`} alt="" className="contact-hero-left-image" />
+                <img src={`${getPublicUrl()}/imgs/contact-page.png`} alt="" className="contact-hero-left-image" />
                 <div className="contact-hero-left-image-overlay" aria-hidden="true" />
               </div>
             </div>

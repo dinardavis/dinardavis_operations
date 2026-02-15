@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { getPublicUrl } from "../utils/publicUrl";
 
 function Footer() {
   return (
@@ -7,7 +8,7 @@ function Footer() {
       <div className="footer-container">
         <Link to="/" className="footer-logo-link">
           <img
-            src={`${process.env.PUBLIC_URL || ''}/imgs/main_logo.png`}
+            src={`${getPublicUrl()}/imgs/main_logo.png`}
             alt="Dinar Davis"
             className="footer-logo"
           />

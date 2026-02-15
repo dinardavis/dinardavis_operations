@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { getPublicUrl } from './utils/publicUrl';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
@@ -9,16 +10,9 @@ import Services from './pages/Services';
 import About from './pages/About';
 import Contact from './pages/Contact';
 
-// One build works everywhere: basename is set at runtime from the current path.
-function getBasename() {
-  const path = window.location.pathname;
-  if (path.startsWith('/dinardavis_operations')) return '/dinardavis_operations';
-  return '';
-}
-
 function App() {
   return (
-    <Router basename={getBasename()}>
+    <Router basename={getPublicUrl()}>
       <ScrollToTop />
       <div className="App">
         <Header />

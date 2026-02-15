@@ -1,12 +1,13 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { getPublicUrl } from '../utils/publicUrl';
 
 function About() {
   useEffect(() => {
     // Set the About CTA background image as a CSS variable
     document.documentElement.style.setProperty(
       '--about-cta-bg-image',
-      `url('${process.env.PUBLIC_URL || ''}/imgs/about-cta.jpg')`
+      `url('${getPublicUrl()}/imgs/about-cta.jpg')`
     );
   }, []);
 
@@ -32,7 +33,7 @@ function About() {
             </div>
             <div className="about-intro-image-wrapper">
               <img 
-                src={`${process.env.PUBLIC_URL || ''}/imgs/about_dinar.jpg`} 
+                src={`${getPublicUrl()}/imgs/about_dinar.jpg`} 
                 alt="Dinar Davis" 
                 className="about-intro-image"
               />
@@ -69,7 +70,7 @@ function About() {
           <div className="about-content-wrapper about-content-image-left">
             <div className="about-content-image-wrapper">
               <img
-                src={`${process.env.PUBLIC_URL || ''}/imgs/how-that-shapes.png`}
+                src={`${getPublicUrl()}/imgs/how-that-shapes.png`}
                 alt="How that shapes my work today"
                 className="about-content-image"
               />
@@ -114,7 +115,7 @@ function About() {
             </div>
             <div className="about-content-image-wrapper">
               <img
-                src={`${process.env.PUBLIC_URL || ''}/imgs/what-clients-come-to.png`}
+                src={`${getPublicUrl()}/imgs/what-clients-come-to.png`}
                 alt="What clients usually come to me for"
                 className="about-content-image"
               />

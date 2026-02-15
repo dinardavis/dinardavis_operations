@@ -1,12 +1,13 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { getPublicUrl } from '../utils/publicUrl';
 
 function Services() {
   useEffect(() => {
     // Set the services background image as a CSS variable
     document.documentElement.style.setProperty(
       '--services-bg-image',
-      `url('${process.env.PUBLIC_URL || ''}/imgs/services-background.png')`
+      `url('${getPublicUrl()}/imgs/services-background.png')`
     );
   }, []);
 
@@ -26,7 +27,7 @@ function Services() {
             </div>
             <div className="intro-image-wrapper">
               <img
-                src={`${process.env.PUBLIC_URL || ''}/imgs/work-together-hero.png`}
+                src={`${getPublicUrl()}/imgs/work-together-hero.png`}
                 alt="Ways we can work together"
                 className="services-intro-image"
               />

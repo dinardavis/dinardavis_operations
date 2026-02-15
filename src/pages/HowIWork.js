@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { getPublicUrl } from "../utils/publicUrl";
 
 function HowIWork() {
   return (
@@ -22,7 +23,7 @@ function HowIWork() {
             </div>
             <div className="intro-image-wrapper">
               <img
-                src={`${process.env.PUBLIC_URL || ''}/imgs/window-refleciton.jpg`}
+                src={`${getPublicUrl()}/imgs/window-refleciton.jpg`}
                 alt="Window reflection"
                 className="intro-image"
               />
@@ -38,7 +39,7 @@ function HowIWork() {
           <div className="intro-content-wrapper">
             <div className="intro-image-wrapper">
               <img
-                src={`${process.env.PUBLIC_URL || ''}/imgs/laptop-desk.jpg`}
+                src={`${getPublicUrl()}/imgs/laptop-desk.jpg`}
                 alt="Business operations"
                 className="intro-image"
               />
@@ -99,7 +100,7 @@ function HowIWork() {
               </div>
               <div className="how-i-work-step-image-wrapper">
                 <img 
-                  src={`${process.env.PUBLIC_URL || ''}/imgs/howiwork_step1.png`} 
+                  src={`${getPublicUrl()}/imgs/howiwork_step1.png`} 
                   alt="Map the work before you change the work" 
                   className="how-i-work-step-image"
                 />
@@ -111,7 +112,7 @@ function HowIWork() {
             <div className="how-i-work-step step-image-left">
               <div className="how-i-work-step-image-wrapper">
                 <img 
-                  src={`${process.env.PUBLIC_URL || ''}/imgs/howiwork_step2.png`} 
+                  src={`${getPublicUrl()}/imgs/howiwork_step2.png`} 
                   alt="Fix the few things causing the most drag" 
                   className="how-i-work-step-image"
                 />
@@ -169,7 +170,7 @@ function HowIWork() {
               </div>
               <div className="how-i-work-step-image-wrapper">
                 <img 
-                  src={`${process.env.PUBLIC_URL || ''}/imgs/howiwork_step3.png`} 
+                  src={`${getPublicUrl()}/imgs/howiwork_step3.png`} 
                   alt="Turn tribal knowledge into a usable playbook" 
                   className="how-i-work-step-image"
                 />
@@ -181,7 +182,7 @@ function HowIWork() {
             <div className="how-i-work-step step-image-left">
               <div className="how-i-work-step-image-wrapper">
                 <img 
-                  src={`${process.env.PUBLIC_URL || ''}/imgs/howiwork_step4.png`} 
+                  src={`${getPublicUrl()}/imgs/howiwork_step4.png`} 
                   alt="Reduce overload and create capacity" 
                   className="how-i-work-step-image"
                 />
@@ -224,7 +225,7 @@ function HowIWork() {
         <div className="clients-notice-half">
           <div className="clients-notice-background">
             <img 
-              src={`${process.env.PUBLIC_URL || ''}/imgs/growing-entrepreneur.jpg`} 
+              src={`${getPublicUrl()}/imgs/growing-entrepreneur.jpg`} 
               alt="Client results" 
               className="clients-notice-bg-image"
             />
@@ -255,7 +256,7 @@ function HowIWork() {
         <div className="how-i-work-cta-half">
           <div className="how-i-work-cta-background">
             <img 
-              src={`${process.env.PUBLIC_URL || ''}/imgs/business-consultation.jpg`}
+              src={`${getPublicUrl()}/imgs/business-consultation.jpg`}
               alt="Business consultation" 
               className="how-i-work-cta-bg-image"
             />

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { getPublicUrl } from "../utils/publicUrl";
 import { HiOutlineChevronDown } from "react-icons/hi";
 import { FaLinkedinIn } from "react-icons/fa6";
 
@@ -25,7 +26,7 @@ function Header() {
         <div className="header-container">
           <div className="logo-container">
             <Link to="/" className="logo-link">
-              <img src={`${process.env.PUBLIC_URL || ''}/imgs/main_logo.png`} alt="Dinar Davis" className="logo" />
+              <img src={`${getPublicUrl()}/imgs/main_logo.png`} alt="Dinar Davis" className="logo" />
                <p className="logo-text">Operations &<br></br>Infrastructure</p>
             </Link>
           </div>
