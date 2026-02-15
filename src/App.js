@@ -9,9 +9,16 @@ import Services from './pages/Services';
 import About from './pages/About';
 import Contact from './pages/Contact';
 
+// One build works everywhere: basename is set at runtime from the current path.
+function getBasename() {
+  const path = window.location.pathname;
+  if (path.startsWith('/dinardavis_operations')) return '/dinardavis_operations';
+  return '';
+}
+
 function App() {
   return (
-    <Router basename={process.env.PUBLIC_URL || ''}>
+    <Router basename={getBasename()}>
       <ScrollToTop />
       <div className="App">
         <Header />
