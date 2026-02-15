@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/dinardavis_operations/static/css/main.3ce38d9a.css",
-    "main.js": "/dinardavis_operations/static/js/main.02c08e16.js",
+    "main.css": "/dinardavis_operations/static/css/main.e6bb8905.css",
+    "main.js": "/dinardavis_operations/static/js/main.6792b546.js",
     "index.html": "/dinardavis_operations/index.html",
-    "main.3ce38d9a.css.map": "/dinardavis_operations/static/css/main.3ce38d9a.css.map",
-    "main.02c08e16.js.map": "/dinardavis_operations/static/js/main.02c08e16.js.map"
+    "main.e6bb8905.css.map": "/dinardavis_operations/static/css/main.e6bb8905.css.map",
+    "main.6792b546.js.map": "/dinardavis_operations/static/js/main.6792b546.js.map"
   },
   "entrypoints": [
-    "static/css/main.3ce38d9a.css",
-    "static/js/main.02c08e16.js"
+    "static/css/main.e6bb8905.css",
+    "static/js/main.6792b546.js"
   ]
 }
