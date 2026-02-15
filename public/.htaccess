@@ -1,0 +1,10 @@
+# SPA fallback: send all requests to index.html so React Router can handle routes.
+# Required for direct links and page refresh to work (e.g. /how-i-work, /contact).
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /index.html [L]
+</IfModule>
