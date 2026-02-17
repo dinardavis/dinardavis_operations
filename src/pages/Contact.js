@@ -264,7 +264,7 @@ function Contact() {
               <div className="contact-form-card frosted-glass">
                 <form className="contact-form" onSubmit={sendEmail}>
                   <div className="contact-form-grid">
-                    <div className="form-group">
+                    <div className="form-group form-group--required">
                       <input
                         type="text"
                         id="firstName"
@@ -275,8 +275,9 @@ function Contact() {
                         className="firstNameField"
                         required
                       />
+                      <span className="contact-form-required-dot" aria-hidden="true">*</span>
                     </div>
-                    <div className="form-group">
+                    <div className="form-group form-group--required">
                       <input
                         type="text"
                         id="lastName"
@@ -287,6 +288,7 @@ function Contact() {
                         className="lastNameField"
                         required
                       />
+                      <span className="contact-form-required-dot" aria-hidden="true">*</span>
                     </div>
                     <div className="form-group contact-form-span-2">
                       <input
@@ -298,7 +300,7 @@ function Contact() {
                         onChange={handleChange}
                       />
                     </div>
-                    <div className="form-group contact-form-span-2">
+                    <div className="form-group form-group--required contact-form-span-2">
                       <input
                         type="email"
                         id="email"
@@ -309,6 +311,7 @@ function Contact() {
                         className="emailField"
                         required
                       />
+                      <span className="contact-form-required-dot" aria-hidden="true">*</span>
                     </div>
                     <div className="form-group contact-form-span-2">
                       <select
@@ -342,7 +345,7 @@ function Contact() {
                         ))}
                       </select>
                     </div>
-                    <div className="form-group contact-form-span-2 contact-form-textarea-wrap">
+                    <div className="form-group form-group--required contact-form-span-2 contact-form-textarea-wrap">
                       <textarea
                         id="message"
                         name="message"
@@ -353,13 +356,20 @@ function Contact() {
                         maxLength={MESSAGE_MAX_LENGTH}
                         required
                       />
-                      <p className="contact-form-char-note">Character limit 500</p>
+                      <span className="contact-form-required-dot contact-form-required-dot--textarea" aria-hidden="true">*</span>
+                        <p className="contact-form-char-note">Character limit 500</p>
+                        
                     </div>
                   </div>
-
+                  <div className="contact-form-note-container">
+                       
+            
                   <button type="submit" className="btn btn-primary contact-submit-btn">
                     Send Request
                   </button>
+
+                   <p className="contact-form-required-note">Required <span>*</span></p>
+                  </div>
                 </form>
               </div>
             </div>
