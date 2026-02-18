@@ -3087,7 +3087,7 @@ main {
   }
 
   .hero-headline {
-    font-size: 2.8rem;
+    font-size: 1.7rem;
   }
 
   .hero-headline-1 span {
@@ -3251,7 +3251,7 @@ main {
   }
 
   .footer-cta-headline {
-    font-size: 1.75rem;
+    font-size: 1.7rem;
   }
 
   .footer-cta-form {
@@ -3382,7 +3382,11 @@ main {
   }
 
   .page-headline {
-    font-size: 2.25rem;
+    font-size: 1.7rem;
+  }
+
+  .page-headline span {
+    font-size: 1.7rem;
   }
 
   .step-section {
@@ -3390,11 +3394,20 @@ main {
   }
 
   .step-headline {
-    font-size: 1.75rem;
+    font-size: 1.7rem;
   }
 
   .cta-headline {
-    font-size: 1.75rem;
+    font-size: 1.7rem;
+  }
+
+  .clients-notice-headline,
+  .how-i-work-cta-headline {
+    font-size: 1.7rem;
+  }
+
+  .how-i-work-step-title {
+    font-size: 1.7rem;
   }
 
   .how-i-work-step {
@@ -3510,7 +3523,7 @@ main {
   }
 
   .about-intro-heading {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
 
   /* Contact page */
@@ -3521,7 +3534,7 @@ main {
   }
 
   .contact-hero-headline {
-    font-size: 2.5rem;
+    font-size: 1.7rem;
   }
 
   .contact-form-card {
