@@ -1234,6 +1234,7 @@ main {
 .why-choose-tile-footer-text {
   margin-bottom: 18px;
   opacity: 0.8;
+  text-align: center;
 }
 
 .why-choose-tile-footer .btn.btn-secondary {
