@@ -235,7 +235,7 @@ function Contact() {
         </div>
       )}
 
-      <section className="contact-hero-section">
+      <section className="contact-hero-section" data-scroll-reveal="fade">
         <div className="container">
           <div className="contact-hero-grid">
             <div className="contact-hero-left">
@@ -260,7 +260,7 @@ function Contact() {
               </div>
             </div>
 
-            <div className="contact-hero-right">
+            <div className="contact-hero-right" data-scroll-reveal>
               <div className="contact-form-card frosted-glass">
                 <form className="contact-form" onSubmit={sendEmail}>
                   <div className="contact-form-grid">

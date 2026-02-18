@@ -14,7 +14,7 @@ function Services() {
   return (
     <div className="services">
       {/* Intro Section */}
-      <section className="intro-section">
+      <section className="intro-section" data-scroll-reveal="fade">
         <div className="container">
           <div className="intro-content-wrapper">
             <div className="intro-text">
@@ -41,7 +41,7 @@ function Services() {
       <section className="services-section">
         <div className="container">
           <div className="feature-cards-grid services-grid">
-            <div className="service-card">
+            <div className="service-card" data-scroll-reveal>
               <h2 className="feature-card-title">30-Day Operational Stabilization</h2>
               <p className="feature-card-price">$3,500<span> one-time</span></p>
               <p className="feature-card-text">
@@ -56,7 +56,7 @@ function Services() {
             </div>
 
             {/* Service 2 */}
-            <div className="service-card">
+            <div className="service-card" data-scroll-reveal>
               <h2 className="feature-card-title">Ongoing Operational Support</h2>
               <p className="feature-card-price">$2,000<span>/month</span></p>
               <p className="feature-card-text">
@@ -71,7 +71,7 @@ function Services() {
             </div>
 
             {/* Service 3 */}
-            <div className="service-card">
+            <div className="service-card" data-scroll-reveal>
               <h2 className="feature-card-title">Light Operational Support</h2>
               <p className="feature-card-price">$1,000<span>/month</span></p>
               <p className="feature-card-text">
@@ -86,7 +86,7 @@ function Services() {
             </div>
 
             {/* Service 4 - Fractional COO (Featured) */}
-            <div className="service-card-featured">
+            <div className="service-card-featured" data-scroll-reveal>
               <div className="service-badge" style={{marginBottom: '1rem', display: 'inline-block'}}>Limited Availability</div>
               <h2 className="feature-card-title">Fractional COO</h2>
               <p className="feature-card-price" style={{fontWeight: '600', marginBottom: '1rem'}}>$9,000<span>/month</span></p>

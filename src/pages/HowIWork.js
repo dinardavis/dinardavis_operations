@@ -6,7 +6,7 @@ function HowIWork() {
   return (
     <div className="how-i-work">
       {/* Intro Section */}
-      <section className="intro-section">
+      <section className="intro-section" data-scroll-reveal="fade">
         <div className="how-i-work-content-container">
           <div className="intro-content-wrapper">
             <div className="intro-text">
@@ -33,7 +33,7 @@ function HowIWork() {
       </section>
 
       {/* What This Looks Like Section */}
-      <section className="about-features-section">
+      <section className="about-features-section" data-scroll-reveal>
         <div className="container">
           <h2 className="section-headline-centered">What This Looks Like in Practice</h2>
           <div className="intro-content-wrapper">
@@ -65,17 +65,17 @@ function HowIWork() {
         </div>
       </section>
 
-      <section className="about-features-section">
+      <section className="about-features-section" data-scroll-reveal>
         <h3 className="how-i-work-step-title  section-headline-centered">The Fundamental Progression</h3>
         <p className="how-i-work-subheadline section-subheadline">Every engagement follows a core progression, adapted to your team, your clients, and your stage of growth.</p>
       </section>
 
       {/* Process Steps - Single Column with Alternating Image Layout */}
-      <section className="how-i-work-steps-section">
+      <section className="how-i-work-steps-section" data-scroll-reveal>
         <div className="container">
           <div className="how-i-work-steps-grid">
             {/* Step 1 - Content Left, Image Right */}
-            <div className="how-i-work-step step-image-right">
+            <div className="how-i-work-step step-image-right" data-scroll-reveal>
               <div className="how-i-work-step-content frosted-glass">
                 <h3 className="how-i-work-step-title">Map the Work Before You Change the Work</h3>
                 <p className="how-i-work-step-text" style={{fontStyle: 'italic', marginBottom: '1.5rem', opacity: 0.9}}>
@@ -109,7 +109,7 @@ function HowIWork() {
             </div>
 
             {/* Step 2 - Image Left, Content Right */}
-            <div className="how-i-work-step step-image-left">
+            <div className="how-i-work-step step-image-left" data-scroll-reveal>
               <div className="how-i-work-step-image-wrapper">
                 <img 
                   src={`${getPublicUrl()}/imgs/howiwork_step2.png`} 
@@ -145,7 +145,7 @@ function HowIWork() {
             </div>
 
             {/* Step 3 - Content Left, Image Right */}
-            <div className="how-i-work-step step-image-right">
+            <div className="how-i-work-step step-image-right" data-scroll-reveal>
               <div className="how-i-work-step-content frosted-glass">
                 <h3 className="how-i-work-step-title">Turn Tribal Knowledge into a Usable Playbook</h3>
                 <p className="how-i-work-step-text" style={{fontStyle: 'italic', marginBottom: '1.5rem', opacity: 0.9}}>
@@ -179,7 +179,7 @@ function HowIWork() {
             </div>
 
             {/* Step 4 - Image Left, Content Right */}
-            <div className="how-i-work-step step-image-left">
+            <div className="how-i-work-step step-image-left" data-scroll-reveal>
               <div className="how-i-work-step-image-wrapper">
                 <img 
                   src={`${getPublicUrl()}/imgs/howiwork_step4.png`} 
@@ -222,7 +222,7 @@ function HowIWork() {
       {/* Combined Clients Notice and CTA Section */}
       <section className="how-i-work-cta-section">
         {/* What Clients Notice - Left Side */}
-        <div className="clients-notice-half">
+        <div className="clients-notice-half" data-scroll-reveal>
           <div className="clients-notice-background">
             <img 
               src={`${getPublicUrl()}/imgs/growing-entrepreneur.jpg`} 
@@ -253,7 +253,7 @@ function HowIWork() {
         </div>
 
         {/* CTA - Right Side */}
-        <div className="how-i-work-cta-half">
+        <div className="how-i-work-cta-half" data-scroll-reveal>
           <div className="how-i-work-cta-background">
             <img 
               src={`${getPublicUrl()}/imgs/business-consultation.jpg`}

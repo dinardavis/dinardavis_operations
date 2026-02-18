@@ -13,7 +13,7 @@ function Home() {
   return (
     <div className="home">
       {/* Hero Section */}
-      <section className="hero">
+      <section className="hero" data-scroll-reveal="fade">
         <div className="container">
           <div className="hero-content">
             <div className="hero-header">
@@ -98,7 +98,7 @@ function Home() {
       </section>
 
       {/* About/Feature Cards Section */}
-      <section className="about-features-section">
+      <section className="about-features-section" data-scroll-reveal>
         <h2 className="section-headline-centered">You've Built a Growing Business. So Why Are Things Feeling Harder Than Ever?</h2>
         <p className="section-subheadline">
           There’s a point where growth quietly changes the nature of a business. What once ran on momentum starts to demand structure. More clients add complexity. New partners and hires introduce dependencies. The stakes rise, and the margin for improvisation gets smaller.
@@ -137,7 +137,7 @@ function Home() {
       </section>
 
       {/* Why Choose Section - How I Work Preview */}
-     <section className="why-choose-section why-choose-tile-section">
+     <section className="why-choose-section why-choose-tile-section" data-scroll-reveal>
   <div className="container">
             <h2 className="section-headline-centered">My Approach: Focused. Deliberate. Effective.</h2>
     <p className="section-subheadline" style={{ marginBottom: "1rem" }}>
@@ -148,7 +148,7 @@ function Home() {
     </p>
           <div className="why-choose-tile-list">
       {/* 1 */}
-            <div className="why-choose-tile">
+            <div className="why-choose-tile" data-scroll-reveal>
         <div className="why-choose-tile-number" aria-hidden="true">
           <p>1</p>
         </div>
@@ -161,7 +161,7 @@ function Home() {
         </div>
       </div>
             {/* 2 */}
-            <div className="why-choose-tile">
+            <div className="why-choose-tile" data-scroll-reveal>
         <div className="why-choose-tile-number" aria-hidden="true">2</div>
         <div className="why-choose-tile-content">
           <h3 className="why-choose-tile-title">Address the biggest pressure points</h3>
@@ -172,7 +172,7 @@ function Home() {
         </div>
       </div>
             {/* 3 */}
-            <div className="why-choose-tile">
+            <div className="why-choose-tile" data-scroll-reveal>
         <div className="why-choose-tile-number" aria-hidden="true">3</div>
         <div className="why-choose-tile-content">
           <h3 className="why-choose-tile-title">Make the essentials repeatable</h3>
@@ -183,7 +183,7 @@ function Home() {
         </div>
       </div>
             {/* 4 */}
-            <div className="why-choose-tile">
+            <div className="why-choose-tile" data-scroll-reveal>
         <div className="why-choose-tile-number" aria-hidden="true">4</div>
         <div className="why-choose-tile-content">
           <h3 className="why-choose-tile-title">Create room to grow</h3>
@@ -208,7 +208,7 @@ function Home() {
       {/* Combined Services Preview and Footer CTA Section */}
       <section className="combined-cta-section">
         {/* Services Preview - Left Side */}
-        <div className="services-preview-half">
+        <div className="services-preview-half" data-scroll-reveal>
           <div className="services-preview-background">
             <img 
               src={`${getPublicUrl()}/imgs/flexible-ways-to-engage.jpg`} 
@@ -230,7 +230,7 @@ function Home() {
         </div>
 
         {/* Footer CTA - Right Side */}
-        <div className="footer-cta-half">
+        <div className="footer-cta-half" data-scroll-reveal>
           <div className="footer-cta-background">
             <img 
               src="https://images.unsplash.com/photo-1556761175-4b46a572b786?w=800&h=600&fit=crop" 

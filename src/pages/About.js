@@ -14,7 +14,7 @@ function About() {
   return (
     <div className="about">
       {/* Intro Section */}
-      <section className="intro-section">
+      <section className="intro-section" data-scroll-reveal="fade">
         <div className="container">
           <h1 className="page-headline">About</h1>
           <div className="about-intro-wrapper">
@@ -43,7 +43,7 @@ function About() {
       </section>
 
       {/* Where I've Spent My Time Section */}
-      <section className="about-content-section">
+      <section className="about-content-section" data-scroll-reveal>
         <div className="container" style={{ display: "flex", flexDirection: "column", alignItems: "center"}}>
           <h2 className="section-headline">Where I've Spent My Time</h2>
           <div className="section-content">
@@ -65,7 +65,7 @@ function About() {
       </section>
 
       {/* How That Shapes My Work Today Section */}
-      <section className="about-content-section">
+      <section className="about-content-section" data-scroll-reveal>
         <div className="container">
           <div className="about-content-wrapper about-content-image-left">
             <div className="about-content-image-wrapper">
@@ -96,7 +96,7 @@ function About() {
       </section>
 
       {/* What Clients Usually Come to Me For Section */}
-      <section className="about-content-section">
+      <section className="about-content-section" data-scroll-reveal>
         <div className="container">
           <div className="about-content-wrapper about-content-image-right">
             <div className="about-content-text frosted-glass">
@@ -126,7 +126,7 @@ function About() {
       </section>
 
       {/* CTA Section - matches Home "View Services & Pricing" styling */}
-      <section className="cta-section about-cta-section">
+      <section className="cta-section about-cta-section" data-scroll-reveal>
         <div className="container">
           <h2 className="cta-headline about-cta-headline">If your business is growing but starting to feel harder to run, I'd be glad to talk.</h2>
           <Link to="/contact" className="btn btn-secondary services-home-btn">
