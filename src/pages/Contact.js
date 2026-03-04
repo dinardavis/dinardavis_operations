@@ -255,7 +255,7 @@ function Contact() {
                 </p>
               </div>
               <div className="contact-hero-left-image-wrap">
-                <img src={`${getPublicUrl()}/imgs/contact-page.png`} alt="" className="contact-hero-left-image" />
+                <img src={`${getPublicUrl()}/imgs/contact-page.png`} alt="" className="contact-hero-left-image" loading="lazy" decoding="async" />
                 <div className="contact-hero-left-image-overlay" aria-hidden="true" />
               </div>
             </div>

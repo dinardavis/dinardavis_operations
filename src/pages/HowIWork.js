@@ -26,6 +26,8 @@ function HowIWork() {
                 src={`${getPublicUrl()}/imgs/window-refleciton.jpg`}
                 alt="Window reflection"
                 className="intro-image"
+                loading="lazy"
+                decoding="async"
               />
             </div>
           </div>
@@ -42,6 +44,8 @@ function HowIWork() {
                 src={`${getPublicUrl()}/imgs/laptop-desk.jpg`}
                 alt="Business operations"
                 className="intro-image"
+                loading="lazy"
+                decoding="async"
               />
             </div>
             <div className="intro-text">
@@ -103,6 +107,8 @@ function HowIWork() {
                   src={`${getPublicUrl()}/imgs/howiwork_step1.png`} 
                   alt="Map the work before you change the work" 
                   className="how-i-work-step-image"
+                  loading="lazy"
+                  decoding="async"
                 />
                 <div className="how-i-work-step-overlay"></div>
               </div>
@@ -115,6 +121,8 @@ function HowIWork() {
                   src={`${getPublicUrl()}/imgs/howiwork_step2.png`} 
                   alt="Fix the few things causing the most drag" 
                   className="how-i-work-step-image"
+                  loading="lazy"
+                  decoding="async"
                 />
                 <div className="how-i-work-step-overlay"></div>
               </div>
@@ -173,6 +181,8 @@ function HowIWork() {
                   src={`${getPublicUrl()}/imgs/howiwork_step3.png`} 
                   alt="Turn tribal knowledge into a usable playbook" 
                   className="how-i-work-step-image"
+                  loading="lazy"
+                  decoding="async"
                 />
                 <div className="how-i-work-step-overlay"></div>
               </div>
@@ -185,6 +195,8 @@ function HowIWork() {
                   src={`${getPublicUrl()}/imgs/howiwork_step4.png`} 
                   alt="Reduce overload and create capacity" 
                   className="how-i-work-step-image"
+                  loading="lazy"
+                  decoding="async"
                 />
                 <div className="how-i-work-step-overlay"></div>
               </div>
@@ -228,6 +240,8 @@ function HowIWork() {
               src={`${getPublicUrl()}/imgs/growing-entrepreneur.jpg`} 
               alt="Client results" 
               className="clients-notice-bg-image"
+              loading="lazy"
+              decoding="async"
             />
             <div className="how-i-work-cta-overlay">
               <div className="how-i-work-content-container">
@@ -259,6 +273,8 @@ function HowIWork() {
               src={`${getPublicUrl()}/imgs/business-consultation.jpg`}
               alt="Business consultation" 
               className="how-i-work-cta-bg-image"
+              loading="lazy"
+              decoding="async"
             />
             <div className="how-i-work-cta-overlay">
               <div className="how-i-work-content-container">

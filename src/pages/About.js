@@ -36,6 +36,8 @@ function About() {
                 src={`${getPublicUrl()}/imgs/about_dinar.jpg`} 
                 alt="Dinar Davis" 
                 className="about-intro-image"
+                loading="lazy"
+                decoding="async"
               />
             </div>
           </div>
@@ -73,6 +75,8 @@ function About() {
                 src={`${getPublicUrl()}/imgs/how-that-shapes.png`}
                 alt="How that shapes my work today"
                 className="about-content-image"
+                loading="lazy"
+                decoding="async"
               />
               <div className="about-content-image-overlay"></div>
             </div>
@@ -118,6 +122,8 @@ function About() {
                 src={`${getPublicUrl()}/imgs/what-clients-come-to.png`}
                 alt="What clients usually come to me for"
                 className="about-content-image"
+                loading="lazy"
+                decoding="async"
               />
               <div className="about-content-image-overlay"></div>
             </div>

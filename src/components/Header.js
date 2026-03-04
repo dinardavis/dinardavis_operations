@@ -26,7 +26,7 @@ function Header() {
         <div className="header-container">
           <div className="logo-container">
             <Link to="/" className="logo-link">
-              <img src={`${getPublicUrl()}/imgs/main_logo.png`} alt="Dinar Davis" className="logo" />
+              <img src={`${getPublicUrl()}/imgs/main_logo.png`} alt="Dinar Davis" className="logo" decoding="async" fetchPriority="high" />
                <p className="logo-text">Operations &<br></br>Infrastructure</p>
             </Link>
           </div>

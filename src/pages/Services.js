@@ -30,6 +30,8 @@ function Services() {
                 src={`${getPublicUrl()}/imgs/work-together-hero.png`}
                 alt="Ways we can work together"
                 className="services-intro-image"
+                loading="lazy"
+                decoding="async"
               />
               <div className="intro-image-overlay"></div>
             </div>

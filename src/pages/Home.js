@@ -29,59 +29,59 @@ function Home() {
               <div className="logo-ticker-wrapper">
                 <div className="logo-ticker-track">
                   <div className="logo-ticker-item">
-                    <img src={`${getPublicUrl()}/imgs/brand_logos/fox.png`} alt="20th Century Fox" className="brand-logo" />
+                    <img src={`${getPublicUrl()}/imgs/brand_logos/fox.png`} alt="20th Century Fox" className="brand-logo" loading="lazy" decoding="async" />
                   </div>
                   <div className="logo-ticker-item">
-                    <img src={`${getPublicUrl()}/imgs/brand_logos/disney.png`} alt="Disney" className="brand-logo" />
+                    <img src={`${getPublicUrl()}/imgs/brand_logos/disney.png`} alt="Disney" className="brand-logo" loading="lazy" decoding="async" />
                   </div>
                   <div className="logo-ticker-item">
-                    <img src={`${getPublicUrl()}/imgs/brand_logos/GM.png`} alt="GM" className="brand-logo" />
+                    <img src={`${getPublicUrl()}/imgs/brand_logos/GM.png`} alt="GM" className="brand-logo" loading="lazy" decoding="async" />
                   </div>
                   <div className="logo-ticker-item">
-                    <img src={`${getPublicUrl()}/imgs/brand_logos/P&G_logo.png`} alt="P&G" className="brand-logo" />
+                    <img src={`${getPublicUrl()}/imgs/brand_logos/P&G_logo.png`} alt="P&G" className="brand-logo" loading="lazy" decoding="async" />
                   </div>
                   <div className="logo-ticker-item">
-                    <img src={`${getPublicUrl()}/imgs/brand_logos/pfizer.svg`} alt="Pfizer" className="brand-logo" />
+                    <img src={`${getPublicUrl()}/imgs/brand_logos/pfizer.svg`} alt="Pfizer" className="brand-logo" loading="lazy" decoding="async" />
                   </div>
                   <div className="logo-ticker-item">
-                    <img src={`${getPublicUrl()}/imgs/brand_logos/att.svg`} alt="AT&T" className="brand-logo" />
+                    <img src={`${getPublicUrl()}/imgs/brand_logos/att.svg`} alt="AT&T" className="brand-logo" loading="lazy" decoding="async" />
                   </div>
                   <div className="logo-ticker-item">
-                    <img src={`${getPublicUrl()}/imgs/brand_logos/wynn.svg`} alt="Wynn Resorts" className="brand-logo" />
+                    <img src={`${getPublicUrl()}/imgs/brand_logos/wynn.svg`} alt="Wynn Resorts" className="brand-logo" loading="lazy" decoding="async" />
                   </div>
                   <div className="logo-ticker-item">
-                    <img src={`${getPublicUrl()}/imgs/brand_logos/fourseasons.png`} alt="Four Seasons Resorts" className="brand-logo" />
+                    <img src={`${getPublicUrl()}/imgs/brand_logos/fourseasons.png`} alt="Four Seasons Resorts" className="brand-logo" loading="lazy" decoding="async" />
                   </div>
                   <div className="logo-ticker-item">
-                    <img src={`${getPublicUrl()}/imgs/brand_logos/ritz.png`} alt="Ritz-Carlton" className="brand-logo" />
+                    <img src={`${getPublicUrl()}/imgs/brand_logos/ritz.png`} alt="Ritz-Carlton" className="brand-logo" loading="lazy" decoding="async" />
                   </div>
                   {/* Duplicate for seamless loop */}
                   <div className="logo-ticker-item">
-                    <img src={`${getPublicUrl()}/imgs/brand_logos/fox.png`} alt="20th Century Fox" className="brand-logo" />
+                    <img src={`${getPublicUrl()}/imgs/brand_logos/fox.png`} alt="20th Century Fox" className="brand-logo" loading="lazy" decoding="async" />
                   </div>
                   <div className="logo-ticker-item">
-                    <img src={`${getPublicUrl()}/imgs/brand_logos/disney.png`} alt="Disney" className="brand-logo" />
+                    <img src={`${getPublicUrl()}/imgs/brand_logos/disney.png`} alt="Disney" className="brand-logo" loading="lazy" decoding="async" />
                   </div>
                   <div className="logo-ticker-item">
-                    <img src={`${getPublicUrl()}/imgs/brand_logos/GM.png`} alt="GM" className="brand-logo" />
+                    <img src={`${getPublicUrl()}/imgs/brand_logos/GM.png`} alt="GM" className="brand-logo" loading="lazy" decoding="async" />
                   </div>
                   <div className="logo-ticker-item">
-                    <img src={`${getPublicUrl()}/imgs/brand_logos/P&G_logo.png`} alt="P&G" className="brand-logo" />
+                    <img src={`${getPublicUrl()}/imgs/brand_logos/P&G_logo.png`} alt="P&G" className="brand-logo" loading="lazy" decoding="async" />
                   </div>
                   <div className="logo-ticker-item">
-                    <img src={`${getPublicUrl()}/imgs/brand_logos/pfizer.svg`} alt="Pfizer" className="brand-logo" />
+                    <img src={`${getPublicUrl()}/imgs/brand_logos/pfizer.svg`} alt="Pfizer" className="brand-logo" loading="lazy" decoding="async" />
                   </div>
                   <div className="logo-ticker-item">
-                    <img src={`${getPublicUrl()}/imgs/brand_logos/att.svg`} alt="AT&T" className="brand-logo" />
+                    <img src={`${getPublicUrl()}/imgs/brand_logos/att.svg`} alt="AT&T" className="brand-logo" loading="lazy" decoding="async" />
                   </div>
                   <div className="logo-ticker-item">
-                    <img src={`${getPublicUrl()}/imgs/brand_logos/wynn.svg`} alt="Wynn Resorts" className="brand-logo" />
+                    <img src={`${getPublicUrl()}/imgs/brand_logos/wynn.svg`} alt="Wynn Resorts" className="brand-logo" loading="lazy" decoding="async" />
                   </div>
                   <div className="logo-ticker-item">
-                    <img src={`${getPublicUrl()}/imgs/brand_logos/fourseasons.png`} alt="Four Seasons Resorts" className="brand-logo" />
+                    <img src={`${getPublicUrl()}/imgs/brand_logos/fourseasons.png`} alt="Four Seasons Resorts" className="brand-logo" loading="lazy" decoding="async" />
                   </div>
                   <div className="logo-ticker-item">
-                    <img src={`${getPublicUrl()}/imgs/brand_logos/ritz.png`} alt="Ritz-Carlton" className="brand-logo" />
+                    <img src={`${getPublicUrl()}/imgs/brand_logos/ritz.png`} alt="Ritz-Carlton" className="brand-logo" loading="lazy" decoding="async" />
                   </div>
                 </div>
               </div>
@@ -130,7 +130,7 @@ function Home() {
               </div>
             </div>
             <div className="feature-card feature-card-img-container">
-              <img className="feature-card-img" src={`${getPublicUrl()}/imgs/how_dinar.jpg`} alt="" />
+              <img className="feature-card-img" src={`${getPublicUrl()}/imgs/how_dinar.jpg`} alt="" loading="lazy" decoding="async" />
             </div>
           </div>
         </div>
@@ -214,6 +214,8 @@ function Home() {
               src={`${getPublicUrl()}/imgs/flexible-ways-to-engage.jpg`} 
               alt="Business consultation and services" 
               className="services-preview-bg-image"
+              loading="lazy"
+              decoding="async"
             />
             <div className="services-preview-overlay">
               <div className="container">
@@ -236,6 +238,8 @@ function Home() {
               src="https://images.unsplash.com/photo-1556761175-4b46a572b786?w=800&h=600&fit=crop" 
               alt="Business consultation" 
               className="footer-cta-bg-image"
+              loading="lazy"
+              decoding="async"
             />
             <div className="footer-cta-overlay">
               <div className="container">

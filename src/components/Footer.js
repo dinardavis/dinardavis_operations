@@ -11,6 +11,8 @@ function Footer() {
             src={`${getPublicUrl()}/imgs/main_logo.png`}
             alt="Dinar Davis"
             className="footer-logo"
+            loading="lazy"
+            decoding="async"
           />
           <p className="footer-tagline">
             Making your growing business easier to run.
