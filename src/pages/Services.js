@@ -45,9 +45,9 @@ function Services() {
           <div className="feature-cards-grid services-grid">
             <div className="service-card" data-scroll-reveal>
               <h2 className="feature-card-title">30-Day Operational Stabilization</h2>
-              <p className="feature-card-price">$3,500<span> one-time</span></p>
+              <p className="feature-card-price">$4,000<span> one-time</span></p>
               <p className="feature-card-text">
-                A focused engagement to assess, stabilize, and structure your internal operations so growth doesn't create unnecessary friction.
+                In 30 days, you will have a clear map of where work is stalling, the critical fixes applied, and a documented structure your team can actually use.
               </p>
               <p className="feature-card-text">
                 Designed for businesses experiencing bottlenecks, overload, or growing pains.
@@ -60,7 +60,7 @@ function Services() {
             {/* Service 2 */}
             <div className="service-card" data-scroll-reveal>
               <h2 className="feature-card-title">Ongoing Operational Support</h2>
-              <p className="feature-card-price">$2,000<span>/month</span></p>
+              <p className="feature-card-price">$2,500<span>/month</span></p>
               <p className="feature-card-text">
                 Continued support to optimize workflows, document processes, and reduce operational friction as the business evolves.
               </p>
@@ -74,8 +74,8 @@ function Services() {
 
             {/* Service 3 */}
             <div className="service-card" data-scroll-reveal>
-              <h2 className="feature-card-title">Light Operational Support</h2>
-              <p className="feature-card-price">$1,000<span>/month</span></p>
+              <h2 className="feature-card-title">Advisory Retainer</h2>
+              <p className="feature-card-price">$1,500<span>/month</span></p>
               <p className="feature-card-text">
                 A lighter-touch option for smaller teams or businesses with limited but recurring operational needs.
               </p>
