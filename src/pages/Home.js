@@ -139,7 +139,7 @@ function Home() {
       {/* Why Choose Section - How I Work Preview */}
      <section className="why-choose-section why-choose-tile-section" data-scroll-reveal>
   <div className="container">
-            <h2 className="section-headline-centered">My Approach: Focused. Deliberate. Effective.</h2>
+            <h2 className="section-headline-centered">My Approach:<br></br> Focused. Deliberate. Effective.</h2>
     <p className="section-subheadline" style={{ marginBottom: "1rem" }}>
       I work with businesses at the point where growth needs to be supported by intention, not improvisation. The goal isn’t to layer on process, it’s to make the existing operation clearer, steadier, and easier to manage day to day.
     </p>
